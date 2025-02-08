@@ -24,11 +24,7 @@ Suivez mes streams de développement de logiciels, jeux vidéo, applications mob
 
 ## Documentation et assistance
 
-Je passe par des commentaires au format [XMLDOC](https://docwiki.embarcadero.com/RADStudio/fr/Commentaires_de_documentation_XML) dans Delphi pour documenter mes projets. Ils sont reconnus par Help Insight qui propose de l'aide à la saisie en temps réel dans l'éditeur de code.
-
-J'utilise régulièrement l'outil [DocInsight](https://devjetsoftware.com/products/documentation-insight/) pour les saisir et contrôler leur formatage.
-
-L'export de la documentation est fait en HTML par [DocInsight](https://devjetsoftware.com/products/documentation-insight/) ou [PasDoc](https://pasdoc.github.io) vers le dossier /docs du dépôt. Vous y avez aussi [accès en ligne](https://developpeurpascal.github.io/librairies-TurboPascal) grâce à l'hébergement offert par GitHub Pages.
+L'export de la documentation est fait en HTML par ou [PasDoc](https://pasdoc.github.io) vers le dossier /docs du dépôt. Vous y avez aussi [accès en ligne](https://developpeurpascal.github.io/librairies-TurboPascal) grâce à l'hébergement offert par GitHub Pages.
 
 D'autres informations (tutoriels, articles, vidéos, FAQ, présentations et liens) sont disponibles sur [le site web du projet](https://pascallib.developpeur-pascal.fr/) ou [le devlog du projet](https://developpeur-pascal.fr/mes-librairies-pour-turbo-pascal.html).
 

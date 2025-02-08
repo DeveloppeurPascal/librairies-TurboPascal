@@ -24,11 +24,7 @@ Follow my development streams of software, video games, mobile applications and 
 
 ## Documentation and support
 
-I use comments in [XMLDOC](https://docwiki.embarcadero.com/RADStudio/en/XML_Documentation_Comments) format in Delphi to document my projects. They are recognized by Help Insight, which offers real-time input help in the code editor.
-
-I regularly use the [DocInsight](https://devjetsoftware.com/products/documentation-insight/) tool to enter them and check their formatting.
-
-Documentation is exported in HTML by [DocInsight](https://devjetsoftware.com/products/documentation-insight/) or [PasDoc](https://pasdoc.github.io) to the /docs folder of the repository. You can also [access it online](https://developpeurpascal.github.io/librairies-TurboPascal) through the hosting offered by GitHub Pages.
+Documentation is exported in HTML by [PasDoc](https://pasdoc.github.io) to the /docs folder of the repository. You can also [access it online](https://developpeurpascal.github.io/librairies-TurboPascal) through the hosting offered by GitHub Pages.
 
 Further information (tutorials, articles, videos, FAQ, talks and links) can be found on [the project website](https://pascallib.developpeur-pascal.fr/) or [the project devlog](https://developpeur-pascal.fr/mes-librairies-pour-turbo-pascal.html).
 
