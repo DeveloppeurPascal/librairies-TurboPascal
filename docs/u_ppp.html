@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: u_ppp</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit u_ppp</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="u_ppp.t_rvb_coul.html"><code>t_rvb_coul</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="u_ppp.t_ppp_imag.html"><code>t_ppp_imag</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="u_ppp.t_ppp.html"><code>t_ppp</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_ppp.html#ppp_init">ppp_init</a></strong>: <a href="u_ppp.html#p_ppp">p_ppp</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="u_ppp.html#ppp_load">ppp_load</a></strong>(nom_fich : string) : <a href="u_ppp.html#p_ppp">p_ppp</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_ppp.html#ppp_save">ppp_save</a></strong>(nom_fich : string; ppp : <a href="u_ppp.html#p_ppp">p_ppp</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_ppp.html#ppp_affiche">ppp_affiche</a></strong>(ppp : <a href="u_ppp.html#p_ppp">p_ppp</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_ppp.html#ppp_set_coul">ppp_set_coul</a></strong>(coul : <a href="u_ppp.html#p_ppp_pal">p_ppp_pal</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="u_ppp.html#ppp_get_coul">ppp_get_coul</a></strong>: <a href="u_ppp.html#p_ppp_pal">p_ppp_pal</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_ppp.html#ppp_done">ppp_done</a></strong>(var ppp : <a href="u_ppp.html#p_ppp">p_ppp</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="u_ppp.html#get_mode">get_mode</a></strong>: byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_ppp.html#set_mode">set_mode</a></strong>(num : byte) : boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_ppp.html#ppp_pal_init">ppp_pal_init</a></strong>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_ppp.html#p_ppp_pal">p_ppp_pal</a></strong> = &circ;<a href="u_ppp.html#t_ppp_pal">t_ppp_pal</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_ppp.html#t_ppp_pal">t_ppp_pal</a></strong> = array [0..255] of <a href="u_ppp.t_rvb_coul.html">t_rvb_coul</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_ppp.html#p_ppp_imag">p_ppp_imag</a></strong> = &circ;<a href="u_ppp.t_ppp_imag.html">t_ppp_imag</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_ppp.html#p_ppp">p_ppp</a></strong> = &circ;<a href="u_ppp.t_ppp.html">t_ppp</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ppp_init"></span><code>function <strong>ppp_init</strong>: <a href="u_ppp.html#p_ppp">p_ppp</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ppp_load"></span><code>function <strong>ppp_load</strong>(nom_fich : string) : <a href="u_ppp.html#p_ppp">p_ppp</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ppp_save"></span><code>procedure <strong>ppp_save</strong>(nom_fich : string; ppp : <a href="u_ppp.html#p_ppp">p_ppp</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ppp_affiche"></span><code>procedure <strong>ppp_affiche</strong>(ppp : <a href="u_ppp.html#p_ppp">p_ppp</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ppp_set_coul"></span><code>procedure <strong>ppp_set_coul</strong>(coul : <a href="u_ppp.html#p_ppp_pal">p_ppp_pal</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ppp_get_coul"></span><code>function <strong>ppp_get_coul</strong>: <a href="u_ppp.html#p_ppp_pal">p_ppp_pal</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ppp_done"></span><code>procedure <strong>ppp_done</strong>(var ppp : <a href="u_ppp.html#p_ppp">p_ppp</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_mode"></span><code>function <strong>get_mode</strong>: byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="set_mode"></span><code>function <strong>set_mode</strong>(num : byte) : boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ppp_pal_init"></span><code>procedure <strong>ppp_pal_init</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_ppp_pal"></span><code><strong>p_ppp_pal</strong> = &circ;<a href="u_ppp.html#t_ppp_pal">t_ppp_pal</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_ppp_pal"></span><code><strong>t_ppp_pal</strong> = array [0..255] of <a href="u_ppp.t_rvb_coul.html">t_rvb_coul</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_ppp_imag"></span><code><strong>p_ppp_imag</strong> = &circ;<a href="u_ppp.t_ppp_imag.html">t_ppp_imag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_ppp"></span><code><strong>p_ppp</strong> = &circ;<a href="u_ppp.t_ppp.html">t_ppp</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

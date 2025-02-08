@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: u_vga_graph</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit u_vga_graph</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="u_m_zone.html">u_m_zone</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_vga_graph.html#pset">pset</a></strong>(x, y : word; c : byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_vga_graph.html#remplace_couleur">remplace_couleur</a></strong>(x1, y1, x2, y2 : word; old_c, new_c : byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_vga_graph.html#line">line</a></strong>(x1, y1, x2, y2 : word; c : byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_vga_graph.html#box">box</a></strong>(x1, y1, x2, y2 : word; c : byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_vga_graph.html#boxf">boxf</a></strong>(x1, y1, x2, y2 : word; c : byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_vga_graph.html#dessin_fleche">dessin_fleche</a></strong>(x, y, lx, ly : word; coul_fleche, coul_fond : byte; sens : <a href="u_vga_graph.html#t_sens_fleche">t_sens_fleche</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_vga_graph.html#dessin_fleche_zone">dessin_fleche_zone</a></strong>(x, y, lx, ly : word;coul_fleche, coul_fond : byte; sens : <a href="u_vga_graph.html#t_sens_fleche">t_sens_fleche</a>; zone : <a href="u_m_zone.html#p_m_zone">p_m_zone</a>; code_nul : boolean; code_carac : char);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_vga_graph.html#dessin_cadre">dessin_cadre</a></strong>(x1, y1, x2, y2 : word; coul_gauche, coul_bas, coul_fond, new_coul_fond : byte);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_vga_graph.html#t_sens_fleche">t_sens_fleche</a></strong> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pset"></span><code>procedure <strong>pset</strong>(x, y : word; c : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="remplace_couleur"></span><code>procedure <strong>remplace_couleur</strong>(x1, y1, x2, y2 : word; old_c, new_c : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Met un point aux coordonn‚es (X,Y) de la couleur C.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="line"></span><code>procedure <strong>line</strong>(x1, y1, x2, y2 : word; c : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Remplace la couleur OLD_C par la couleur NEW_C dans le cadre d‚fini.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="box"></span><code>procedure <strong>box</strong>(x1, y1, x2, y2 : word; c : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Dessine un trait (horizontal ou vertical de couleur C entre les points (X1,Y1) et (X2,Y2).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="boxf"></span><code>procedure <strong>boxf</strong>(x1, y1, x2, y2 : word; c : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Dessine un cadre de couleur C.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="dessin_fleche"></span><code>procedure <strong>dessin_fleche</strong>(x, y, lx, ly : word; coul_fleche, coul_fond : byte; sens : <a href="u_vga_graph.html#t_sens_fleche">t_sens_fleche</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Dessine un cadre plein de couleur C.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="dessin_fleche_zone"></span><code>procedure <strong>dessin_fleche_zone</strong>(x, y, lx, ly : word;coul_fleche, coul_fond : byte; sens : <a href="u_vga_graph.html#t_sens_fleche">t_sens_fleche</a>; zone : <a href="u_m_zone.html#p_m_zone">p_m_zone</a>; code_nul : boolean; code_carac : char);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fait le dessin d'une flŠche de couleur COUL_FLECHE sur fond COUL_FOND.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="dessin_cadre"></span><code>procedure <strong>dessin_cadre</strong>(x1, y1, x2, y2 : word; coul_gauche, coul_bas, coul_fond, new_coul_fond : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fait le dessin d'une flŠche de couleur COUL_FLECHE sur fond COUL_FOND et rajoute la zone correspondante … la liste ZONE.</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_sens_fleche"></span><code><strong>t_sens_fleche</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="gauche">gauche</span></li>
+<li>
+<span id="droite">droite</span></li>
+<li>
+<span id="haut">haut</span></li>
+<li>
+<span id="bas">bas</span></li>
+</ul>
+</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

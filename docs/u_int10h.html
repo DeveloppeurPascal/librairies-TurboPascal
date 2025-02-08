@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: u_int10h</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit u_int10h</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="u_int10h.t_rvb.html"><code>t_rvb</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_int10h.html#set_mode">set_mode</a></strong>(n : byte) : boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#define_cursor">define_cursor</a></strong>(ls, li : byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#goto_xy">goto_xy</a></strong>(page, x, y : byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#info_cursor">info_cursor</a></strong>(page : byte; var ls, li, x, y : byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#read_pen">read_pen</a></strong>(var is_ok : boolean; var x, y : word; var l, c : byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#set_page">set_page</a></strong>(n : byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#scroll_up">scroll_up</a></strong>(nb_lig, text_attr, x1, y1, x2, y2 : byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#scroll_down">scroll_down</a></strong>(nb_lig, text_attr, x1, y1, x2, y2 : byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#put_pixel">put_pixel</a></strong>(page, color : byte; x, y : word);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="u_int10h.html#get_pixel">get_pixel</a></strong>(page : byte; x, y : word) : byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_int10h.html#get_mode">get_mode</a></strong>: byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#info_mode">info_mode</a></strong>(var mode_num, nb_col, page : byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#set_reg_pal">set_reg_pal</a></strong>(reg, coul : byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#set_bordure_coul">set_bordure_coul</a></strong>(coul : byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#set_reg_pal_16_bord">set_reg_pal_16_bord</a></strong>(t : <a href="u_int10h.html#t_tab_17_byte">t_tab_17_byte</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="u_int10h.html#get_reg_pal">get_reg_pal</a></strong>(reg : byte) : byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_int10h.html#get_bordure_coul">get_bordure_coul</a></strong>: byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#get_reg_pal_16_bord">get_reg_pal_16_bord</a></strong>(var t : <a href="u_int10h.html#t_tab_17_byte">t_tab_17_byte</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#set_cna_reg">set_cna_reg</a></strong>(reg : word; v, b, r : byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#set_blk_cna_reg">set_blk_cna_reg</a></strong>(reg1, nb_reg : word; t : <a href="u_int10h.html#t_tab_rvb">t_tab_rvb</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#get_cna_reg">get_cna_reg</a></strong>(reg : word; var v, b, r : byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#get_blk_cna_reg">get_blk_cna_reg</a></strong>(reg1, nb_reg : word; var t : <a href="u_int10h.html#t_tab_rvb">t_tab_rvb</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_int10h.html#set_coul2gray">set_coul2gray</a></strong>(reg1, nb_reg : word);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_int10h.html#t_tab_rvb">t_tab_rvb</a></strong> = array [0..255] of <a href="u_int10h.t_rvb.html">t_rvb</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_int10h.html#t_tab_17_byte">t_tab_17_byte</a></strong> = array [0..16] of byte;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_int10h.html#cga_40x25x16">cga_40x25x16</a></strong> =  1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_int10h.html#cga_80x25x16">cga_80x25x16</a></strong> =  3;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_int10h.html#cga_320x200x4">cga_320x200x4</a></strong> =  5;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_int10h.html#cga_640x200x4">cga_640x200x4</a></strong> = 6;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_int10h.html#hgc_80x85x2">hgc_80x85x2</a></strong> = 7;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_int10h.html#pcj_160x200x16">pcj_160x200x16</a></strong> = 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_int10h.html#pcj_320x200x16">pcj_320x200x16</a></strong> = 9;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_int10h.html#pcj_640x200x4">pcj_640x200x4</a></strong> = $a;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_int10h.html#ega_320x200x16">ega_320x200x16</a></strong> = $d;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_int10h.html#ega_640x200x16">ega_640x200x16</a></strong> = $e;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_int10h.html#ega_640x350x2">ega_640x350x2</a></strong> = $f;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_int10h.html#ega_640x650x16">ega_640x650x16</a></strong> = $10;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_int10h.html#mcga_640x480x2">mcga_640x480x2</a></strong> = $11;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_int10h.html#mcga_320x200x256">mcga_320x200x256</a></strong> = $13;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_int10h.html#vga_640x480x16">vga_640x480x16</a></strong> = $12;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="set_mode"></span><code>function <strong>set_mode</strong>(n : byte) : boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+******************************************************************************** Fonctions diverses ********************************************************************************</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="define_cursor"></span><code>procedure <strong>define_cursor</strong>(ls, li : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fct. 0 = S‚lection d'un mode vid‚o.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="goto_xy"></span><code>procedure <strong>goto_xy</strong>(page, x, y : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Si ls = 32, le curseur est invisible.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="info_cursor"></span><code>procedure <strong>info_cursor</strong>(page : byte; var ls, li, x, y : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fct. 2 = Positionnement du curseur dans la page sp‚cifi‚e.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="read_pen"></span><code>procedure <strong>read_pen</strong>(var is_ok : boolean; var x, y : word; var l, c : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fct. 3 = Lire l'‚tat du curseur.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="set_page"></span><code>procedure <strong>set_page</strong>(n : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fct. 4 = Lire la position du photostyle.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="scroll_up"></span><code>procedure <strong>scroll_up</strong>(nb_lig, text_attr, x1, y1, x2, y2 : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fct. 5 = Choisir une page vid‚o.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="scroll_down"></span><code>procedure <strong>scroll_down</strong>(nb_lig, text_attr, x1, y1, x2, y2 : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fct. 6 = D‚filement vers le haut.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="put_pixel"></span><code>procedure <strong>put_pixel</strong>(page, color : byte; x, y : word);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fct. 7 = D‚fillement vers le bas.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_pixel"></span><code>function <strong>get_pixel</strong>(page : byte; x, y : word) : byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fct. C = Changer la valeur d'un pixel.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_mode"></span><code>function <strong>get_mode</strong>: byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="info_mode"></span><code>procedure <strong>info_mode</strong>(var mode_num, nb_col, page : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="set_reg_pal"></span><code>procedure <strong>set_reg_pal</strong>(reg, coul : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+******************************************************************************** Fonction 10h = D‚finir le contenu des registres de palette et les attributs d'intensit‚ et de clignotement. ********************************************************************************</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="set_bordure_coul"></span><code>procedure <strong>set_bordure_coul</strong>(coul : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sfct. 0 = Modifier un registre de palette.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="set_reg_pal_16_bord"></span><code>procedure <strong>set_reg_pal_16_bord</strong>(t : <a href="u_int10h.html#t_tab_17_byte">t_tab_17_byte</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sfct. 1 = Sp‚cifier la couleur de surbalayage.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_reg_pal"></span><code>function <strong>get_reg_pal</strong>(reg : byte) : byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sfct. 2 = Modifier les 16 registres de couleurs plus le surbalayage.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_bordure_coul"></span><code>function <strong>get_bordure_coul</strong>: byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sfct. 7 = Lire un registre de palette.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_reg_pal_16_bord"></span><code>procedure <strong>get_reg_pal_16_bord</strong>(var t : <a href="u_int10h.html#t_tab_17_byte">t_tab_17_byte</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sfct. 8 = Lire le contenu du refistre de surbalayage.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="set_cna_reg"></span><code>procedure <strong>set_cna_reg</strong>(reg : word; v, b, r : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sfct. 9 = Lire les 16 registres de palette plus le registre de surbalayage.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="set_blk_cna_reg"></span><code>procedure <strong>set_blk_cna_reg</strong>(reg1, nb_reg : word; t : <a href="u_int10h.html#t_tab_rvb">t_tab_rvb</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sfct. 10h = Modifier un registre du CNA vid‚o.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_cna_reg"></span><code>procedure <strong>get_cna_reg</strong>(reg : word; var v, b, r : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sfct. 12h = Modifier un bloc de registres de couleur du CNA vid‚o.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_blk_cna_reg"></span><code>procedure <strong>get_blk_cna_reg</strong>(reg1, nb_reg : word; var t : <a href="u_int10h.html#t_tab_rvb">t_tab_rvb</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sfct. 15h = Lire un registre de couleur du CNA vid‚o.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="set_coul2gray"></span><code>procedure <strong>set_coul2gray</strong>(reg1, nb_reg : word);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sfct. 17h = Lire un bloc de registres de couleur du CNA vid‚o.</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_tab_rvb"></span><code><strong>t_tab_rvb</strong> = array [0..255] of <a href="u_int10h.t_rvb.html">t_rvb</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_tab_17_byte"></span><code><strong>t_tab_17_byte</strong> = array [0..16] of byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="cga_40x25x16"></span><code><strong>cga_40x25x16</strong> =  1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Auteur: Patrick Pr‚martin. Date: 17/07/1992. 21/07/1992. 14/02/1993. Langage: Turbo PAscal 6.0 But: Impl‚mentation de quelques fonctions de l'interruption 10H en Turbo Pascal.
+
+<p>Bibliographie: GUIDE MICROSOFT DE LA PROGRAMMATION DES CARTES GRAPHIQUES (Richard Wilton, Microsoft Corporation)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="cga_80x25x16"></span><code><strong>cga_80x25x16</strong> =  3;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cartes CGA</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="cga_320x200x4"></span><code><strong>cga_320x200x4</strong> =  5;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+2 ou</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="cga_640x200x4"></span><code><strong>cga_640x200x4</strong> = 6;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+4 ou</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="hgc_80x85x2"></span><code><strong>hgc_80x85x2</strong> = 7;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pcj_160x200x16"></span><code><strong>pcj_160x200x16</strong> = 8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cartes Hercule</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pcj_320x200x16"></span><code><strong>pcj_320x200x16</strong> = 9;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+PC Junior seulement</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pcj_640x200x4"></span><code><strong>pcj_640x200x4</strong> = $a;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ega_320x200x16"></span><code><strong>ega_320x200x16</strong> = $d;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ega_640x200x16"></span><code><strong>ega_640x200x16</strong> = $e;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cartes EGA</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ega_640x350x2"></span><code><strong>ega_640x350x2</strong> = $f;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ega_640x650x16"></span><code><strong>ega_640x650x16</strong> = $10;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="mcga_640x480x2"></span><code><strong>mcga_640x480x2</strong> = $11;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="mcga_320x200x256"></span><code><strong>mcga_320x200x256</strong> = $13;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cartes MCGA</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="vga_640x480x16"></span><code><strong>vga_640x480x16</strong> = $12;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

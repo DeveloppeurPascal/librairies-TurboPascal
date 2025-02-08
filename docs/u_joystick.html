@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: u_joystick</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit u_joystick</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_joystick.html#test_joystick">test_joystick</a></strong>: byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_joystick.html#init_joystick">init_joystick</a></strong>(num_joystick : byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_joystick.html#strig">strig</a></strong>: byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="u_joystick.html#stick">stick</a></strong>(num_joystick : byte) : byte;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_joystick.html#stick_a">stick_a</a></strong> = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_joystick.html#stick_b">stick_b</a></strong> = 1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_joystick.html#strig_a_1">strig_a_1</a></strong> = 32;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_joystick.html#strig_a_2">strig_a_2</a></strong> = 16;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_joystick.html#strig_b_1">strig_b_1</a></strong> = 128;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_joystick.html#strig_b_2">strig_b_2</a></strong> = 64;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_joystick.html#minx_0">minx_0</a></strong> : word = 65535;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_joystick.html#miny_0">miny_0</a></strong> : word = 65535;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_joystick.html#maxx_0">maxx_0</a></strong> : word = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_joystick.html#maxy_0">maxy_0</a></strong> : word = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_joystick.html#minx_1">minx_1</a></strong> : word = 65535;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_joystick.html#miny_1">miny_1</a></strong> : word = 65535;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_joystick.html#maxx_1">maxx_1</a></strong> : word = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_joystick.html#maxy_1">maxy_1</a></strong> : word = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_joystick.html#vx_0">vx_0</a></strong> : word = (65535 div 3);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_joystick.html#vy_0">vy_0</a></strong> : word = (65535 div 3);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_joystick.html#vx_1">vx_1</a></strong> : word = (65535 div 3);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_joystick.html#vy_1">vy_1</a></strong> : word = (65535 div 3);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="test_joystick"></span><code>function <strong>test_joystick</strong>: byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="init_joystick"></span><code>procedure <strong>init_joystick</strong>(num_joystick : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Donne des renseignements sur les Joysticks connect‚s: 0 - Pas de carte, ou Joystick absent. 1 - Joystick A connect‚. 2 - Joystick B connect‚. 3 - Joysticks A et B connect‚s.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="strig"></span><code>function <strong>strig</strong>: byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Permet le calibrage d'un joystick analogique.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="stick"></span><code>function <strong>stick</strong>(num_joystick : byte) : byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Renvoie l'‚tat des boutons des deux Joysticks.</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="stick_a"></span><code><strong>stick_a</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Auteur: Patrick Pr‚martin. Date: 21/07/1992 28/07/1992. (Interface Multi-Langues) 30/07/1992. 13/12/1992. (Acc‚l‚ration du tratement) Langage: Turbo Pascal 6.0 But: Gestion des Joysticks reli‚s … un ordinateur AT.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="stick_b"></span><code><strong>stick_b</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Num‚ro du Joystick A.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="strig_a_1"></span><code><strong>strig_a_1</strong> = 32;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Num‚ro du Joystick B.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="strig_a_2"></span><code><strong>strig_a_2</strong> = 16;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Bouton 1 du Joystick A.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="strig_b_1"></span><code><strong>strig_b_1</strong> = 128;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Bouton 2 du Joystick A.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="strig_b_2"></span><code><strong>strig_b_2</strong> = 64;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Bouton 1 du Joystick B</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="minx_0"></span><code><strong>minx_0</strong> : word = 65535;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Variables permettant le calibrage des Joysticks analogiques:</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="miny_0"></span><code><strong>miny_0</strong> : word = 65535;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="maxx_0"></span><code><strong>maxx_0</strong> : word = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="maxy_0"></span><code><strong>maxy_0</strong> : word = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="minx_1"></span><code><strong>minx_1</strong> : word = 65535;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="miny_1"></span><code><strong>miny_1</strong> : word = 65535;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="maxx_1"></span><code><strong>maxx_1</strong> : word = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="maxy_1"></span><code><strong>maxy_1</strong> : word = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="vx_0"></span><code><strong>vx_0</strong> : word = (65535 div 3);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="vy_0"></span><code><strong>vy_0</strong> : word = (65535 div 3);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="vx_1"></span><code><strong>vx_1</strong> : word = (65535 div 3);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="vy_1"></span><code><strong>vy_1</strong> : word = (65535 div 3);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

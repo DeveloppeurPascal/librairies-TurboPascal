@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: u_Calendar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit u_Calendar</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Drivers</li><li>Objects</li><li>App</li><li>Views</li><li>Dos</li><li>Dialogs</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Object&nbsp;<a class="bold" href="u_Calendar.T_Calendar_View.html"><code>T_Calendar_View</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Object&nbsp;<a class="bold" href="u_Calendar.T_Calendar_Window.html"><code>T_Calendar_Window</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_Calendar.html#Register_Calendar">Register_Calendar</a></strong>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_Calendar.html#P_Calendar_View">P_Calendar_View</a></strong> = &circ;<a href="u_Calendar.T_Calendar_View.html">T_Calendar_View</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_Calendar.html#p_Calendar_Window">p_Calendar_Window</a></strong> = &circ;<a href="u_Calendar.T_Calendar_Window.html">T_Calendar_Window</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_Calendar.html#DaysInMonth">DaysInMonth</a></strong> : array[1..12] of Byte =
+                   (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_Calendar.html#R_Calendar_View">R_Calendar_View</a></strong>: TStreamRec = (
+                                   ObjType : 10200;
+                                   VmtLink : Ofs (TypeOf (<a href="u_Calendar.T_Calendar_View.html">T_Calendar_View</a>)&circ;);
+                                   Load :    @<a href="u_Calendar.T_Calendar_View.html#Load">T_Calendar_View.Load</a>;
+                                   Store :   @<a href="u_Calendar.T_Calendar_View.html#Store">T_Calendar_View.Store</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_Calendar.html#R_Calendar_Window">R_Calendar_Window</a></strong>: TStreamRec = (
+                                     ObjType : 10201;
+                                     VmtLink : Ofs (TypeOf (<a href="u_Calendar.T_Calendar_Window.html">T_Calendar_Window</a>)&circ;);
+                                     Load :    @T_Calendar_Window.Load;
+                                     Store :   @T_Calendar_Window.Store);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Register_Calendar"></span><code>procedure <strong>Register_Calendar</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="P_Calendar_View"></span><code><strong>P_Calendar_View</strong> = &circ;<a href="u_Calendar.T_Calendar_View.html">T_Calendar_View</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_Calendar_Window"></span><code><strong>p_Calendar_Window</strong> = &circ;<a href="u_Calendar.T_Calendar_Window.html">T_Calendar_Window</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DaysInMonth"></span><code><strong>DaysInMonth</strong> : array[1..12] of Byte =
+                   (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="R_Calendar_View"></span><code><strong>R_Calendar_View</strong>: TStreamRec = (
+                                   ObjType : 10200;
+                                   VmtLink : Ofs (TypeOf (<a href="u_Calendar.T_Calendar_View.html">T_Calendar_View</a>)&circ;);
+                                   Load :    @<a href="u_Calendar.T_Calendar_View.html#Load">T_Calendar_View.Load</a>;
+                                   Store :   @<a href="u_Calendar.T_Calendar_View.html#Store">T_Calendar_View.Store</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="R_Calendar_Window"></span><code><strong>R_Calendar_Window</strong>: TStreamRec = (
+                                     ObjType : 10201;
+                                     VmtLink : Ofs (TypeOf (<a href="u_Calendar.T_Calendar_Window.html">T_Calendar_Window</a>)&circ;);
+                                     Load :    @T_Calendar_Window.Load;
+                                     Store :   @T_Calendar_Window.Store);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

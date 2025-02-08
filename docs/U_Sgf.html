@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: U_Sgf</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit U_Sgf</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>crt</li><li>dos</li><li><a href="U_Curseur.html">u_curseur</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Sgf.html#Exist">Exist</a></strong>(Nom_Fic: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Sgf.html#Renomme">Renomme</a></strong>(Nom1,Nom2: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Sgf.html#Efface">Efface</a></strong>(Nom_Fic: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Sgf.html#Change_Dir">Change_Dir</a></strong>(Repertoire: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Sgf.html#Make_Dir">Make_Dir</a></strong>(Repertoire: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Sgf.html#Remove_Dir">Remove_Dir</a></strong>(Repertoire: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Sgf.html#Get_Extension">Get_Extension</a></strong>(Nom_Fich : String): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Sgf.html#Get_Nom_Fichier">Get_Nom_Fichier</a></strong>(Nom_Fich : String): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="U_Sgf.html#get_nom_fichier2">get_nom_fichier2</a></strong>(nom_fich : string) : string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Sgf.html#Get_Chemin_Fichier">Get_Chemin_Fichier</a></strong>(Nom_Fich : String) : String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Sgf.html#Met_Extension">Met_Extension</a></strong>(Nom_Fic, Extension : String; Var Result : String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Sgf.html#Cree_Bak">Cree_Bak</a></strong>(Nom_Fic: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="U_Sgf.html#erreur">erreur</a></strong>(code_io : integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="U_Sgf.html#get_file_name">get_file_name</a></strong>(nom_fic : pathstr) : pathstr;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Sgf.html#C_EXE_Name">C_EXE_Name</a></strong>: string = '';</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Exist"></span><code>Function <strong>Exist</strong>(Nom_Fic: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Renomme"></span><code>Function <strong>Renomme</strong>(Nom1,Nom2: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+teste l'‚xistence d'un fichier</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Efface"></span><code>Function <strong>Efface</strong>(Nom_Fic: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+renomme le fichier NOM1 en NOM2 si NOM1 existe et que NOM2 n'existe pas.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Change_Dir"></span><code>Function <strong>Change_Dir</strong>(Repertoire: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+efface le fichier sp‚cifi‚</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Make_Dir"></span><code>Function <strong>Make_Dir</strong>(Repertoire: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+change le chemin courant (lecteur inclus)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Remove_Dir"></span><code>Function <strong>Remove_Dir</strong>(Repertoire: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cr‚e le sous-r‚pertoire</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Get_Extension"></span><code>Function <strong>Get_Extension</strong>(Nom_Fich : String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+efface le sous-repertoire sp‚cifi‚</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Get_Nom_Fichier"></span><code>Function <strong>Get_Nom_Fichier</strong>(Nom_Fich : String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+renvoie l'extension du fichier sp‚cifi‚ s'il y en a une. ( le point est inclus dans l'extension)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_nom_fichier2"></span><code>function <strong>get_nom_fichier2</strong>(nom_fich : string) : string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+renvoie le nom du fichier ‚pur‚ de son chemin d'accŠs (mais avec extension).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Get_Chemin_Fichier"></span><code>Function <strong>Get_Chemin_Fichier</strong>(Nom_Fich : String) : String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Renvoie le nom du fichier sans extension.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Met_Extension"></span><code>Procedure <strong>Met_Extension</strong>(Nom_Fic, Extension : String; Var Result : String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+renvoie le chemin d'accŠs contenu dans Nom_Fich.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Cree_Bak"></span><code>Procedure <strong>Cree_Bak</strong>(Nom_Fic: String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+met l'extension pr‚cis‚e au fichier sp‚cifi‚.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="erreur"></span><code>procedure <strong>erreur</strong>(code_io : integer);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cree le fichier .BAK correspondant au fichier nomm‚</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_file_name"></span><code>function <strong>get_file_name</strong>(nom_fic : pathstr) : pathstr;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="C_EXE_Name"></span><code><strong>C_EXE_Name</strong>: string = '';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

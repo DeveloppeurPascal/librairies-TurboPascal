@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: U_Curseur</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit U_Curseur</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Curseur.html#Curseur_On">Curseur_On</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Curseur.html#Curseur_Off">Curseur_Off</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Curseur.html#Curseur_Pave">Curseur_Pave</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Curseur.html#Curseur_Haut">Curseur_Haut</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Curseur.html#Curseur_Milieu">Curseur_Milieu</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Curseur.html#Curseur_Bas">Curseur_Bas</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Curseur.html#Curseur_Locate">Curseur_Locate</a></strong>(X, Y : Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Curseur.html#Curseur_X">Curseur_X</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Curseur.html#Curseur_Y">Curseur_Y</a></strong>: Integer;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Curseur_On"></span><code>Procedure <strong>Curseur_On</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Auteur: Pr‚martin Patrick. Date : 01/03/1991. 09/03/1991. Langage: Turbo Pascal 4.0 Date: 09/09/1991. Langage: Turbo Pascal 6.0
+
+<p>But: Cette unit‚ contient des proc‚dures et fonctions permettant de g‚rer le curseur sans passer par l'unit‚ CRT.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Curseur_Off"></span><code>Procedure <strong>Curseur_Off</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette proc‚dure montre le curseur normal (par d‚faut).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Curseur_Pave"></span><code>Procedure <strong>Curseur_Pave</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette proc‚dure cache le curseur.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Curseur_Haut"></span><code>Procedure <strong>Curseur_Haut</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette proc‚dure fabrique un curseur carr‚ prenant la taille d'un caractŠre.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Curseur_Milieu"></span><code>Procedure <strong>Curseur_Milieu</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette proc‚dure fabrique un curseur dont le tiret est en haut.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Curseur_Bas"></span><code>Procedure <strong>Curseur_Bas</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette procedure fabrique un curseur dont le tiret est au milieu.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Curseur_Locate"></span><code>Procedure <strong>Curseur_Locate</strong>(X, Y : Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette procedure fabrique un curseur dont le tiret est en bas.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Curseur_X"></span><code>Function <strong>Curseur_X</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette proc‚dure positionne le curseur dans la page 0.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Curseur_Y"></span><code>Function <strong>Curseur_Y</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette fonction renvoie l'abscisse du curseur dans la page 0.</p>
+</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

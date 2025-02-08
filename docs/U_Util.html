@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: U_Util</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit U_Util</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="U_Code_Clavier.html">U_Code_Clavier</a></li><li><a href="U_Fenetre.html">U_Fenetre</a></li><li><a href="U_Ger_Chaine.html">U_Ger_Chaine</a></li><li><a href="U_Aff_Chaine.html">U_Aff_Chaine</a></li><li><a href="U_Sgf.html">U_Sgf</a></li><li>Crt</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="U_Util.T_Texte_Affic.html"><code>T_Texte_Affic</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Util.html#Vide_Tampon_Clavier">Vide_Tampon_Clavier</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Util.html#Attente_Appuit_Touche">Attente_Appuit_Touche</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Util.html#Message_Alerte">Message_Alerte</a></strong>(Chaine : String; Attente_Touche : Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Util.html#Affichage_Ecran">Affichage_Ecran</a></strong>(Titre : String; Var Ecran_Aff : <a href="U_Util.T_Texte_Affic.html">T_Texte_Affic</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Util.html#Changer_Valeur">Changer_Valeur</a></strong>(Titre : String; Borne_Min, Borne_Max, Valeur : Integer) : Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Util.html#Ask_Nom_Fichier">Ask_Nom_Fichier</a></strong>(Chaine, Nom1, Extension : String; Tst_Exist : Boolean) : String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Util.html#Question_Oui_Non">Question_Oui_Non</a></strong>(Chaine : String; Defaut : Boolean) : Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Util.html#Question_Alerte">Question_Alerte</a></strong>(Chaine : String): Boolean;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Util.html#T_String78">T_String78</a></strong>    = String [78];</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Util.html#T_Ecran">T_Ecran</a></strong>       = Array [1..<a href="U_Util.html#C_Nb_Ligne_Ecran">C_Nb_Ligne_Ecran</a>] Of <a href="U_Util.html#T_String78">T_String78</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Util.html#C_Nb_Ligne_Ecran">C_Nb_Ligne_Ecran</a></strong> = 20;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Vide_Tampon_Clavier"></span><code>Procedure <strong>Vide_Tampon_Clavier</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Attente_Appuit_Touche"></span><code>Procedure <strong>Attente_Appuit_Touche</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette proc‚dure vide le tampon du clavier.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Message_Alerte"></span><code>Procedure <strong>Message_Alerte</strong>(Chaine : String; Attente_Touche : Boolean);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette proc‚dure attend l'appuit d'une touche.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affichage_Ecran"></span><code>Procedure <strong>Affichage_Ecran</strong>(Titre : String; Var Ecran_Aff : <a href="U_Util.T_Texte_Affic.html">T_Texte_Affic</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette procedure affiche un message et attend eventuellement.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Changer_Valeur"></span><code>Function <strong>Changer_Valeur</strong>(Titre : String; Borne_Min, Borne_Max, Valeur : Integer) : Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette procedure affiche les lignes de l'ecran pass‚.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Ask_Nom_Fichier"></span><code>Function <strong>Ask_Nom_Fichier</strong>(Chaine, Nom1, Extension : String; Tst_Exist : Boolean) : String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette fonction permet la saisie d'une valeur … l'aide du clavier.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Question_Oui_Non"></span><code>Function <strong>Question_Oui_Non</strong>(Chaine : String; Defaut : Boolean) : Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette fonction renvoie le nom du fichier choisi.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Question_Alerte"></span><code>Function <strong>Question_Alerte</strong>(Chaine : String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette fonction est vraie si l'utilisateur a r‚pondu Oui.</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="T_String78"></span><code><strong>T_String78</strong>    = String [78];</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="T_Ecran"></span><code><strong>T_Ecran</strong>       = Array [1..<a href="U_Util.html#C_Nb_Ligne_Ecran">C_Nb_Ligne_Ecran</a>] Of <a href="U_Util.html#T_String78">T_String78</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="C_Nb_Ligne_Ecran"></span><code><strong>C_Nb_Ligne_Ecran</strong> = 20;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

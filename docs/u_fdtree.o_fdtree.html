@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: u_fdtree: Object o_fdtree</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<span id="o_fdtree"></span><h1 class="cio">Object o_fdtree</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="u_fdtree.html">u_fdtree</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type o_fdtree = object(TObject)</code></p>
+<h2 class="description">Description</h2>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">o_fdtree</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="u_fdtree.o_fdtree.html#init">init</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="u_fdtree.o_fdtree.html#done">done</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="u_fdtree.o_fdtree.html#run">run</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="u_fdtree.o_fdtree.html#treat_file">treat_file</a></strong>(f : searchrec) : boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="u_fdtree.o_fdtree.html#treat_directory">treat_directory</a></strong>(d : searchrec) : boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="u_fdtree.o_fdtree.html#stop_run">stop_run</a></strong>: boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="u_fdtree.o_fdtree.html#set_file_mask">set_file_mask</a></strong>(mask : string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="u_fdtree.o_fdtree.html#get_file_mask">get_file_mask</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="u_fdtree.o_fdtree.html#set_directory_mask">set_directory_mask</a></strong>(mask : string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="u_fdtree.o_fdtree.html#get_directory_mask">get_directory_mask</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="u_fdtree.o_fdtree.html#set_start_directory">set_start_directory</a></strong>(st_dir : string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="u_fdtree.o_fdtree.html#get_start_directory">get_start_directory</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="u_fdtree.o_fdtree.html#set_fdtree_sens">set_fdtree_sens</a></strong>(sens : <a href="u_fdtree.html#t_fdtree_sens">t_fdtree_sens</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="u_fdtree.o_fdtree.html#get_fdtree_sens">get_fdtree_sens</a></strong>: <a href="u_fdtree.html#t_fdtree_sens">t_fdtree_sens</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="init"></span><code>constructor <strong>init</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="done"></span><code>destructor <strong>done</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Initialise les donn‚es priv‚es.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="run"></span><code>procedure <strong>run</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="treat_file"></span><code>function <strong>treat_file</strong>(f : searchrec) : boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+R‚alise le parcours et appelle: - Treat_File pour chaque fichier; - Treat_Directory pour chaque r‚pertoire; - Stop_Run pour l'appuit sur une touche.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="treat_directory"></span><code>function <strong>treat_directory</strong>(d : searchrec) : boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+R‚alise le traitement du fichier correspondant.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stop_run"></span><code>function <strong>stop_run</strong>: boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+R‚alise le traitement du r‚pertoire pass‚.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="set_file_mask"></span><code>procedure <strong>set_file_mask</strong>(mask : string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+R‚alise le traitement de l'appuit sur une touche. Renvoie True si l'op‚ration doit s'arr‚ter (et par d‚faut).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="get_file_mask"></span><code>function <strong>get_file_mask</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+D‚fini le masque de recherche des fichiers.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="set_directory_mask"></span><code>procedure <strong>set_directory_mask</strong>(mask : string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Renvoie le masque de recherche des fichiers.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="get_directory_mask"></span><code>function <strong>get_directory_mask</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+D‚fini le masque de recherche des r‚pertoires.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="set_start_directory"></span><code>procedure <strong>set_start_directory</strong>(st_dir : string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Renvoie le masque des r‚pertoires.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="get_start_directory"></span><code>function <strong>get_start_directory</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+D‚fini le r‚pertoire racine de l'arborescence … parcourir.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="set_fdtree_sens"></span><code>procedure <strong>set_fdtree_sens</strong>(sens : <a href="u_fdtree.html#t_fdtree_sens">t_fdtree_sens</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Renvoie le r‚pertoire racine de l'arborescence.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="get_fdtree_sens"></span><code>function <strong>get_fdtree_sens</strong>: <a href="u_fdtree.html#t_fdtree_sens">t_fdtree_sens</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Fixe le sens de parcours de l'arbre: - PreFixe : Fichiers avant r‚pertoires. - Postfix‚ : R‚pertoires avant fichiers.</p>
+</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: U_Codage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit U_Codage</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Codage.html#Car_Coder">Car_Coder</a></strong>(Carac : Char; masq1, masq2 : byte) : Char;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Codage.html#Car_Decoder">Car_Decoder</a></strong>(Carac : Char; masq1, masq2 : byte) : Char;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Codage.html#Ch_Coder">Ch_Coder</a></strong>(Chaine : String) : String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Codage.html#Ch_Decoder">Ch_Decoder</a></strong>(Chaine : String) : String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="U_Codage.html#ptr_coder">ptr_coder</a></strong>(adr : pointer; nb_adr : word);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="U_Codage.html#ptr_decoder">ptr_decoder</a></strong>(adr : pointer; nb_adr : word);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Codage.html#C_Codage_1">C_Codage_1</a></strong> : byte = $2a;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Codage.html#C_Codage_2">C_Codage_2</a></strong> : byte = $f3;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Car_Coder"></span><code>Function <strong>Car_Coder</strong>(Carac : Char; masq1, masq2 : byte) : Char;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Voici les fonctions r‚alisant les codages, et d‚codages.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Car_Decoder"></span><code>Function <strong>Car_Decoder</strong>(Carac : Char; masq1, masq2 : byte) : Char;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Renvoie le caractŠre cod‚.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Ch_Coder"></span><code>Function <strong>Ch_Coder</strong>(Chaine : String) : String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Renvoie le caractŠre d‚cod‚.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Ch_Decoder"></span><code>Function <strong>Ch_Decoder</strong>(Chaine : String) : String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Renvoie la chaine cod‚e.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ptr_coder"></span><code>procedure <strong>ptr_coder</strong>(adr : pointer; nb_adr : word);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Renvoie la chaine d‚cod‚e.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ptr_decoder"></span><code>procedure <strong>ptr_decoder</strong>(adr : pointer; nb_adr : word);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="C_Codage_1"></span><code><strong>C_Codage_1</strong> : byte = $2a;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Voici les deux variables utilis‚es lors du codage. Vous pouvez changer leur valeur par defaut.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="C_Codage_2"></span><code><strong>C_Codage_2</strong> : byte = $f3;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+0010 1010</p>
+</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

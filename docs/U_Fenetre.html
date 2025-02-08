@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: U_Fenetre</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit U_Fenetre</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Crt</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Fenetre.html#Swap_Byte">Swap_Byte</a></strong>(Var A, B : Byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Fenetre.html#Reset_Screen">Reset_Screen</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Fenetre.html#Clear_Window">Clear_Window</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Fenetre.html#Window_Fond">Window_Fond</a></strong>(X1, Y1, X2, Y2, Fond: Byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Fenetre.html#Window_Cadre">Window_Cadre</a></strong>(X1, Y1, X2, Y2, Cadre: Byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Fenetre.html#Window_Cadre_Bis">Window_Cadre_Bis</a></strong>(X1, Y1, X2, Y2, Cadre1, Cadre2: Byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Fenetre.html#Window_Fond_Cadre">Window_Fond_Cadre</a></strong>(X1, Y1, X2, Y2, Fond, Cadre: Byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Fenetre.html#Window_Fond_Cadre_Bis">Window_Fond_Cadre_Bis</a></strong>(X1, Y1, X2, Y2, Fond, Cadre1, Cadre2: Byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Fenetre.html#Window_Titre">Window_Titre</a></strong>(Titre: String; Forme, Fond: Byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Fenetre.html#Dessin_Cadre">Dessin_Cadre</a></strong>(X1, Y1, X2, Y2, Trace: Byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Fenetre.html#Dessin_Cadre_Form">Dessin_Cadre_Form</a></strong>(X1, Y1, X2, Y2, Form: Byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Fenetre.html#Dessin_Cadre_Form_Fond">Dessin_Cadre_Form_Fond</a></strong>(X1, Y1, X2, Y2, Form, Fond: Byte);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Fenetre.html#Type_Cadre">Type_Cadre</a></strong>: Byte;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Swap_Byte"></span><code>Procedure <strong>Swap_Byte</strong>(Var A, B : Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cette variable permet de choisir le cadre: -type_cadre=1 -type_cadre=2 -type_cadre=3 -type_cadre=4 ÚÄÄÄ¿ ÉÍÍÍ» ÖÄÄÄ· ÕÍÍÍ¸ ³ ³ º º º º ³ ³ ÀÄÄÄÙ ÈÍÍÍ¼ ÓÄÄÄ½ ÔÍÍÍ¾ -type_cadre=5 -type_cadre=6 -type_cadre=7 -type_cadre=8 °°°°° ±±±±± ²²²²² ÛÛÛÛÛ ° ° ± ± ² ² Û Û °°°°° ±±±±± ²²²²² ÛÛÛÛÛ -type_cadre=9 -type_cadre=10 ##### ***** # # * * ##### *****</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reset_Screen"></span><code>Procedure <strong>Reset_Screen</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+echange les valeurs de A et de B.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Clear_Window"></span><code>Procedure <strong>Clear_Window</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+mise … zero de tous les parametres de fenetres.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Window_Fond"></span><code>Procedure <strong>Window_Fond</strong>(X1, Y1, X2, Y2, Fond: Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+effacement de la fenetre active remplac‚e par l'ancienne</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Window_Cadre"></span><code>Procedure <strong>Window_Cadre</strong>(X1, Y1, X2, Y2, Cadre: Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cr‚ation d'une fenˆtre avec couleur de fond choisie</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Window_Cadre_Bis"></span><code>Procedure <strong>Window_Cadre_Bis</strong>(X1, Y1, X2, Y2, Cadre1, Cadre2: Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cr‚ation d'une fenˆtre ayant un cadre de couleur sur fond noir</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Window_Fond_Cadre"></span><code>Procedure <strong>Window_Fond_Cadre</strong>(X1, Y1, X2, Y2, Fond, Cadre: Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cr‚ation de fenˆtre avec cadre de couleur forme/fond</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Window_Fond_Cadre_Bis"></span><code>Procedure <strong>Window_Fond_Cadre_Bis</strong>(X1, Y1, X2, Y2, Fond, Cadre1, Cadre2: Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cr‚ation d'une fenˆtre avec cadre (forme/noir) et fond de couleur</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Window_Titre"></span><code>Procedure <strong>Window_Titre</strong>(Titre: String; Forme, Fond: Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cr‚ation d'une fenˆtre avec cadre (forme/fond) et fond de couleur</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Dessin_Cadre"></span><code>Procedure <strong>Dessin_Cadre</strong>(X1, Y1, X2, Y2, Trace: Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+affiche un titre pour la fenetre active.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Dessin_Cadre_Form"></span><code>Procedure <strong>Dessin_Cadre_Form</strong>(X1, Y1, X2, Y2, Form: Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+dessin d'un cadre de type trace ou type_cadre (d‚fini plus haut)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Dessin_Cadre_Form_Fond"></span><code>Procedure <strong>Dessin_Cadre_Form_Fond</strong>(X1, Y1, X2, Y2, Form, Fond: Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+dessin du cadre choisi avec couleur du trac‚ du contour</p>
+</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Type_Cadre"></span><code><strong>Type_Cadre</strong>: Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

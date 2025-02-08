@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: u_picture</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit u_picture</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="u_picture.t_pi1.html"><code>t_pi1</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="u_picture.t_pi1_2.html"><code>t_pi1_2</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="u_picture.t_art.html"><code>t_art</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="u_picture.t_neo.html"><code>t_neo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="u_picture.t_raa.html"><code>t_raa</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_picture.html#affiche_image">affiche_image</a></strong>(var image : <a href="u_picture.html#t_image">t_image</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_picture.html#palette_adapte">palette_adapte</a></strong>(var palette : <a href="u_picture.html#t_palette">t_palette</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_picture.html#p_palette">p_palette</a></strong> = &circ;<a href="u_picture.html#t_palette">t_palette</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_picture.html#t_palette">t_palette</a></strong> = array [0..15] of word;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_picture.html#p_image">p_image</a></strong> = &circ;<a href="u_picture.html#t_image">t_image</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_picture.html#t_image">t_image</a></strong> = array [0..31999] of byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_picture.html#p_anim_pi1">p_anim_pi1</a></strong> = &circ;<a href="u_picture.html#t_anim_pi1">t_anim_pi1</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_picture.html#t_anim_pi1">t_anim_pi1</a></strong> = array [0..31] of byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_picture.html#p_pi1">p_pi1</a></strong> = &circ;<a href="u_picture.t_pi1.html">t_pi1</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_picture.html#p_pi1_2">p_pi1_2</a></strong> = &circ;<a href="u_picture.t_pi1_2.html">t_pi1_2</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_picture.html#p_code_art">p_code_art</a></strong> = &circ;<a href="u_picture.html#t_code_art">t_code_art</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_picture.html#t_code_art">t_code_art</a></strong> = array [0..479] of byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_picture.html#p_art">p_art</a></strong> = &circ;<a href="u_picture.t_art.html">t_art</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_picture.html#p_code_neo">p_code_neo</a></strong> = &circ;<a href="u_picture.html#t_code_neo">t_code_neo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_picture.html#t_code_neo">t_code_neo</a></strong> = array [0..91] of byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_picture.html#p_neo">p_neo</a></strong> = &circ;<a href="u_picture.t_neo.html">t_neo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_picture.html#p_raa">p_raa</a></strong> = &circ;<a href="u_picture.t_raa.html">t_raa</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_picture.html#coul_min">coul_min</a></strong> : word = 0;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="affiche_image"></span><code>procedure <strong>affiche_image</strong>(var image : <a href="u_picture.html#t_image">t_image</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="palette_adapte"></span><code>procedure <strong>palette_adapte</strong>(var palette : <a href="u_picture.html#t_palette">t_palette</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_palette"></span><code><strong>p_palette</strong> = &circ;<a href="u_picture.html#t_palette">t_palette</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Registre de couleur minimal.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_palette"></span><code><strong>t_palette</strong> = array [0..15] of word;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_image"></span><code><strong>p_image</strong> = &circ;<a href="u_picture.html#t_image">t_image</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_image"></span><code><strong>t_image</strong> = array [0..31999] of byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_anim_pi1"></span><code><strong>p_anim_pi1</strong> = &circ;<a href="u_picture.html#t_anim_pi1">t_anim_pi1</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+PI1: 32034 ou 32066 octets</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_anim_pi1"></span><code><strong>t_anim_pi1</strong> = array [0..31] of byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_pi1"></span><code><strong>p_pi1</strong> = &circ;<a href="u_picture.t_pi1.html">t_pi1</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Images de 32034 octets</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_pi1_2"></span><code><strong>p_pi1_2</strong> = &circ;<a href="u_picture.t_pi1_2.html">t_pi1_2</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Images de 32066 octets</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_code_art"></span><code><strong>p_code_art</strong> = &circ;<a href="u_picture.html#t_code_art">t_code_art</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+ART: 32512 octets</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_code_art"></span><code><strong>t_code_art</strong> = array [0..479] of byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_art"></span><code><strong>p_art</strong> = &circ;<a href="u_picture.t_art.html">t_art</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_code_neo"></span><code><strong>p_code_neo</strong> = &circ;<a href="u_picture.html#t_code_neo">t_code_neo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+NEO: 32128 octets</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_code_neo"></span><code><strong>t_code_neo</strong> = array [0..91] of byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_neo"></span><code><strong>p_neo</strong> = &circ;<a href="u_picture.t_neo.html">t_neo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_raa"></span><code><strong>p_raa</strong> = &circ;<a href="u_picture.t_raa.html">t_raa</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+RAA: 32032 octets</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="coul_min"></span><code><strong>coul_min</strong> : word = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Auteur: Patrick Premartin. Date: 19/12/1991. 24/06/1992. 25/06/1992. Langage: Turbo Pascal 6.0
+
+<p>But: Procedures et fonctions de gestion d'images dans differents formats. Ne fonctionne qu'en mode 320*200*256 pour les images couleur venant de l'Atari.</p>
+</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: U_Selection</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit U_Selection</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="U_Chaine.html">u_chaine</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Selection.html#Cadre">Cadre</a></strong>(X1,Y1,X2,Y2: Integer; Titre:<a href="U_Chaine.html#Chaine80">Chaine80</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Selection.html#Entete">Entete</a></strong>(Ch:<a href="U_Chaine.html#Chaine80">Chaine80</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Selection.html#Inverse_Video">Inverse_Video</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Selection.html#Video_Normale">Video_Normale</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Selection.html#Video_Clignotante">Video_Clignotante</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Selection.html#Oui">Oui</a></strong>(Question:String):Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Selection.html#Menu_Ligne">Menu_Ligne</a></strong>(Y:Integer; Menu:<a href="U_Chaine.html#Chaine80">Chaine80</a>; Var Reponse:Char);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Selection.html#Selection">Selection</a></strong>(X1,Y1,X2,Y2:Integer; Var Liste:<a href="U_Chaine.html#Vecteur_Chaine">Vecteur_Chaine</a>;Nb_Liste:Integer; Depart:Integer; Efface:Boolean; Var Position:Integer );</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Selection.html#Selec_Menu">Selec_Menu</a></strong>(X1,Y1,X2,Y2:Integer; Var Liste:<a href="U_Chaine.html#Vecteur_Chaine">Vecteur_Chaine</a>;Nb_Liste:Integer; Depart:Integer; Efface:Boolean; Var Position:Integer );</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Selection.html#Saisir_Entier">Saisir_Entier</a></strong>(Inf,Sup:Integer;Var Entier:Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Selection.html#Visu_Attente">Visu_Attente</a></strong>(Ch:String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Selection.html#Vidange_Tampon_Clavier">Vidange_Tampon_Clavier</a></strong>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Cadre"></span><code>Procedure <strong>Cadre</strong>(X1,Y1,X2,Y2: Integer; Titre:<a href="U_Chaine.html#Chaine80">Chaine80</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+*****************************************************************************</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Entete"></span><code>Procedure <strong>Entete</strong>(Ch:<a href="U_Chaine.html#Chaine80">Chaine80</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Visualisation d'un cadre</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Inverse_Video"></span><code>Procedure <strong>Inverse_Video</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+visualisation de l entete encadree</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Video_Normale"></span><code>Procedure <strong>Video_Normale</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Video_Clignotante"></span><code>Procedure <strong>Video_Clignotante</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Oui"></span><code>Function <strong>Oui</strong>(Question:String):Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Menu_Ligne"></span><code>Procedure <strong>Menu_Ligne</strong>(Y:Integer; Menu:<a href="U_Chaine.html#Chaine80">Chaine80</a>; Var Reponse:Char);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+redemande de la question jusqu a saisie de o ou n</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Selection"></span><code>Procedure <strong>Selection</strong>(X1,Y1,X2,Y2:Integer; Var Liste:<a href="U_Chaine.html#Vecteur_Chaine">Vecteur_Chaine</a>;Nb_Liste:Integer; Depart:Integer; Efface:Boolean; Var Position:Integer );</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Selec_Menu"></span><code>Procedure <strong>Selec_Menu</strong>(X1,Y1,X2,Y2:Integer; Var Liste:<a href="U_Chaine.html#Vecteur_Chaine">Vecteur_Chaine</a>;Nb_Liste:Integer; Depart:Integer; Efface:Boolean; Var Position:Integer );</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Saisir_Entier"></span><code>Procedure <strong>Saisir_Entier</strong>(Inf,Sup:Integer;Var Entier:Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Visu_Attente"></span><code>Procedure <strong>Visu_Attente</strong>(Ch:String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+saisie d un entier compris entre INF et SUP</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Vidange_Tampon_Clavier"></span><code>Procedure <strong>Vidange_Tampon_Clavier</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+visualisation sur la derniere ligne</p>
+</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

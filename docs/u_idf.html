@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: u_idf</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit u_idf</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="u_idf.t_champ.html"><code>t_champ</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_idf.html#init_idf">init_idf</a></strong>(var fich : file; var nb_champs : byte; var champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_idf.html#save_idf_header">save_idf_header</a></strong>(var fich : file; var nb_champs : byte; var champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_idf.html#read_idf">read_idf</a></strong>(var fich : file; nb_champs : byte; champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>; enreg : pointer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_idf.html#write_idf">write_idf</a></strong>(var fich : file; nb_champs : byte; champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>; enreg : pointer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_idf.html#init_idf_enreg">init_idf_enreg</a></strong>(nb_champs : byte; champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>) : pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_idf.html#del_idf_enreg">del_idf_enreg</a></strong>(nb_champs : byte; champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>; var enreg : pointer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_idf.html#get_idf_champ">get_idf_champ</a></strong>(num, nb_champs : byte; champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>; enreg : pointer) : string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_idf.html#set_idf_champ">set_idf_champ</a></strong>(num, nb_champs : byte; champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>; enreg : pointer; ch : string);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_idf.html#t_tab_champ">t_tab_champ</a></strong> = array [1..<a href="u_idf.html#nb_max_champs">nb_max_champs</a>] of <a href="u_idf.t_champ.html">t_champ</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_idf.html#nb_max_champs">nb_max_champs</a></strong> = 8;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="init_idf"></span><code>procedure <strong>init_idf</strong>(var fich : file; var nb_champs : byte; var champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="save_idf_header"></span><code>procedure <strong>save_idf_header</strong>(var fich : file; var nb_champs : byte; var champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="read_idf"></span><code>procedure <strong>read_idf</strong>(var fich : file; nb_champs : byte; champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>; enreg : pointer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="write_idf"></span><code>procedure <strong>write_idf</strong>(var fich : file; nb_champs : byte; champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>; enreg : pointer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="init_idf_enreg"></span><code>function <strong>init_idf_enreg</strong>(nb_champs : byte; champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>) : pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="del_idf_enreg"></span><code>procedure <strong>del_idf_enreg</strong>(nb_champs : byte; champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>; var enreg : pointer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_idf_champ"></span><code>function <strong>get_idf_champ</strong>(num, nb_champs : byte; champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>; enreg : pointer) : string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="set_idf_champ"></span><code>procedure <strong>set_idf_champ</strong>(num, nb_champs : byte; champs : <a href="u_idf.html#t_tab_champ">t_tab_champ</a>; enreg : pointer; ch : string);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_tab_champ"></span><code><strong>t_tab_champ</strong> = array [1..<a href="u_idf.html#nb_max_champs">nb_max_champs</a>] of <a href="u_idf.t_champ.html">t_champ</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="nb_max_champs"></span><code><strong>nb_max_champs</strong> = 8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Auteur: Premartin Patrick Date: 14/09/1991. 16/09/1991. 23/09/1991. 25/06/1992. 14/03/1993. Langage: Turbo Pascal 6.0
+
+<p>But: Lectures et ecritures sur des fichiers .IDF</p>
+</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

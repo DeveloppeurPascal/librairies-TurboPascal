@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: u_fnt</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit u_fnt</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_fnt.html#fnt_load">fnt_load</a></strong>(nom_fich : string) : <a href="u_fnt.html#p_fnt">p_fnt</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="u_fnt.html#fnt_save">fnt_save</a></strong>(nom_fich : string; number : <a href="u_fnt.html#t_fnt_regs">t_fnt_regs</a>) : byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_fnt.html#fnt_register">fnt_register</a></strong>(fnt : <a href="u_fnt.html#p_fnt">p_fnt</a>; number : <a href="u_fnt.html#t_fnt_regs">t_fnt_regs</a>) : byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="u_fnt.html#fnt_select">fnt_select</a></strong>(number : <a href="u_fnt.html#t_fnt_regs">t_fnt_regs</a>) : byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_fnt.html#fnt_erase">fnt_erase</a></strong>(number : <a href="u_fnt.html#t_fnt_regs">t_fnt_regs</a>) : byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_fnt.html#fnt_clear">fnt_clear</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_fnt.html#ecr_char">ecr_char</a></strong>(carac : char);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_fnt.html#ecr_int">ecr_int</a></strong>(nb : longint);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_fnt.html#ecr_str">ecr_str</a></strong>(ch : string);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_fnt.html#ecr_xy">ecr_xy</a></strong>(x, y : integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_fnt.html#ecr_color">ecr_color</a></strong>(forme, fond : byte);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_fnt.html#t_char_mat">t_char_mat</a></strong> = array [1..8] of byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_fnt.html#p_fnt">p_fnt</a></strong> = &circ;<a href="u_fnt.html#t_fnt">t_fnt</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_fnt.html#t_fnt">t_fnt</a></strong> = array [0..255] of <a href="u_fnt.html#t_char_mat">t_char_mat</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_fnt.html#t_fnt_regs">t_fnt_regs</a></strong> = byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_fnt.html#t_ecr_mode">t_ecr_mode</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_fnt.html#nb_max_fnt">nb_max_fnt</a></strong> = 10;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_fnt.html#fnt_last">fnt_last</a></strong>: <a href="u_fnt.html#t_fnt_regs">t_fnt_regs</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_fnt.html#ecr_mode">ecr_mode</a></strong>: <a href="u_fnt.html#t_ecr_mode">t_ecr_mode</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fnt_load"></span><code>function <strong>fnt_load</strong>(nom_fich : string) : <a href="u_fnt.html#p_fnt">p_fnt</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fnt_save"></span><code>function <strong>fnt_save</strong>(nom_fich : string; number : <a href="u_fnt.html#t_fnt_regs">t_fnt_regs</a>) : byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Codes de retour: - pointeur vers la fonte charg‚e; - NIL si erreur (pas assez de m‚moire, nom de fichier incorrect ...).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fnt_register"></span><code>function <strong>fnt_register</strong>(fnt : <a href="u_fnt.html#p_fnt">p_fnt</a>; number : <a href="u_fnt.html#t_fnt_regs">t_fnt_regs</a>) : byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Codes de retour: - 0 si aucune erreur; - 1 si erreur de sauvegarde; - 2 si NUMBER n'est pas valide; - 3 si ce num‚ro n'est pas affect‚.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fnt_select"></span><code>function <strong>fnt_select</strong>(number : <a href="u_fnt.html#t_fnt_regs">t_fnt_regs</a>) : byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Codes de retour: - 0 si pas d'erreur; - 1 si FNT = NIL; - 2 si NUMBER n'est pas valide (autre que dans 1..NB_MAX_FNT).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fnt_erase"></span><code>function <strong>fnt_erase</strong>(number : <a href="u_fnt.html#t_fnt_regs">t_fnt_regs</a>) : byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Codes de retour: - 0 si pas d'erreur; - 1 si NUMBER non valide (autre que dans 0..NB_MAX_FNT); - 2 si la fonte correspondante n'a pas ‚t‚ enregistr‚e par Fnt_Register.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fnt_clear"></span><code>procedure <strong>fnt_clear</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Codes de retour: - 0 si pas d'erreur; - 1 si NUMBER non valide (autre que dans 0..NB_MAX_FNT); - 2 si la fonte correspondante n'existe pas.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ecr_char"></span><code>procedure <strong>ecr_char</strong>(carac : char);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Efface toutes les fontes de la m‚moire et remet la fonte par d‚faut.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ecr_int"></span><code>procedure <strong>ecr_int</strong>(nb : longint);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Ecriture d'un caractŠre dans la fonte courante … la position actuelle.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ecr_str"></span><code>procedure <strong>ecr_str</strong>(ch : string);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Ecriture d'un entier … la position courante dans la fonte actuelle.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ecr_xy"></span><code>procedure <strong>ecr_xy</strong>(x, y : integer);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Ecriture d'une chaine … la position courante.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ecr_color"></span><code>procedure <strong>ecr_color</strong>(forme, fond : byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Deplacement du curseur. (coordonnees textes).</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_char_mat"></span><code><strong>t_char_mat</strong> = array [1..8] of byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="p_fnt"></span><code><strong>p_fnt</strong> = &circ;<a href="u_fnt.html#t_fnt">t_fnt</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_fnt"></span><code><strong>t_fnt</strong> = array [0..255] of <a href="u_fnt.html#t_char_mat">t_char_mat</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_fnt_regs"></span><code><strong>t_fnt_regs</strong> = byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_ecr_mode"></span><code><strong>t_ecr_mode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="transparent">transparent</span></li>
+<li>
+<span id="normal">normal</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="nb_max_fnt"></span><code><strong>nb_max_fnt</strong> = 10;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Auteur: Premartin Patrick Date: 08/09/1991. 09/09/1991. 14/11/1991. 31/12/1992. Langage: Turbo Pascal 6.0 But: Proc‚dures et fonctions permettant de modifier les trames des caractŠres de codes 0 … 255. (en fait, les 256 nouveaux caractŠres sont accessibles en mode graphique avec les proc‚dures d'affichage incluses)</p>
+</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fnt_last"></span><code><strong>fnt_last</strong>: <a href="u_fnt.html#t_fnt_regs">t_fnt_regs</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ecr_mode"></span><code><strong>ecr_mode</strong>: <a href="u_fnt.html#t_ecr_mode">t_ecr_mode</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

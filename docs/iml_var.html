@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: iml_var</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit iml_var</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="iml_var.t_event.html"><code>t_event</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="iml_var.t_date.html"><code>t_date</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="iml_var.t_time.html"><code>t_time</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="iml_var.html#clochette">clochette</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="iml_var.html#num2str">num2str</a></strong>(n : longint) : string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="iml_var.html#str2num">str2num</a></strong>(t : string) : longint;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="iml_var.html#flt2str">flt2str</a></strong>(n : double) : string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="iml_var.html#str2flt">str2flt</a></strong>(t : string) : double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="iml_var.html#dat2str">dat2str</a></strong>(n : <a href="iml_var.t_date.html">t_date</a>) : string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="iml_var.html#str2dat">str2dat</a></strong>(t : string; var res : <a href="iml_var.t_date.html">t_date</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="iml_var.html#tim2str">tim2str</a></strong>(n : <a href="iml_var.t_time.html">t_time</a>) : string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="iml_var.html#str2tim">str2tim</a></strong>(t : string; var res : <a href="iml_var.t_time.html">t_time</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="iml_var.html#min">min</a></strong>(a, b : longint) : longint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="iml_var.html#max">max</a></strong>(a, b : longint) : longint;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="iml_var.html#tst_date">tst_date</a></strong>(var date : <a href="iml_var.t_date.html">t_date</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="iml_var.html#tst_time">tst_time</a></strong>(var time : <a href="iml_var.t_time.html">t_time</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="iml_var.html#t_proc">t_proc</a></strong> = procedure;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="iml_var.html#t_typ_saisie">t_typ_saisie</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="iml_var.html#c_no_effect">c_no_effect</a></strong> = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="iml_var.html#c_cmde_next">c_cmde_next</a></strong> = 1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="iml_var.html#c_cmde_previous">c_cmde_previous</a></strong> = 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="iml_var.html#c_cmde_help">c_cmde_help</a></strong> = 3;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="iml_var.html#c_cmde_ok">c_cmde_ok</a></strong> = 4;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="iml_var.html#c_cmde_cancel">c_cmde_cancel</a></strong> = 5;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="iml_var.html#c_ev_rien">c_ev_rien</a></strong> = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="iml_var.html#c_ev_clavier">c_ev_clavier</a></strong> = 1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="iml_var.html#c_ev_souris">c_ev_souris</a></strong> = 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="iml_var.html#c_ev_commande">c_ev_commande</a></strong> = 3;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="iml_var.html#mode_insert">mode_insert</a></strong>: boolean;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clochette"></span><code>procedure <strong>clochette</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="num2str"></span><code>function <strong>num2str</strong>(n : longint) : string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="str2num"></span><code>function <strong>str2num</strong>(t : string) : longint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="flt2str"></span><code>function <strong>flt2str</strong>(n : double) : string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="str2flt"></span><code>function <strong>str2flt</strong>(t : string) : double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="dat2str"></span><code>function <strong>dat2str</strong>(n : <a href="iml_var.t_date.html">t_date</a>) : string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="str2dat"></span><code>procedure <strong>str2dat</strong>(t : string; var res : <a href="iml_var.t_date.html">t_date</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="tim2str"></span><code>function <strong>tim2str</strong>(n : <a href="iml_var.t_time.html">t_time</a>) : string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="str2tim"></span><code>procedure <strong>str2tim</strong>(t : string; var res : <a href="iml_var.t_time.html">t_time</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="min"></span><code>function <strong>min</strong>(a, b : longint) : longint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="max"></span><code>function <strong>max</strong>(a, b : longint) : longint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="tst_date"></span><code>procedure <strong>tst_date</strong>(var date : <a href="iml_var.t_date.html">t_date</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="tst_time"></span><code>procedure <strong>tst_time</strong>(var time : <a href="iml_var.t_time.html">t_time</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_proc"></span><code><strong>t_proc</strong> = procedure;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_typ_saisie"></span><code><strong>t_typ_saisie</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="input">input</span></li>
+<li>
+<span id="output">output</span></li>
+<li>
+<span id="both">both</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="c_no_effect"></span><code><strong>c_no_effect</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Constantes concernant les valeurs de retour des fonctions TEST_CLAVIER, TEST_SOURIS, et la zone CMDE des Çvänements.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="c_cmde_next"></span><code><strong>c_cmde_next</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="c_cmde_previous"></span><code><strong>c_cmde_previous</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="c_cmde_help"></span><code><strong>c_cmde_help</strong> = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="c_cmde_ok"></span><code><strong>c_cmde_ok</strong> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="c_cmde_cancel"></span><code><strong>c_cmde_cancel</strong> = 5;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="c_ev_rien"></span><code><strong>c_ev_rien</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Constantes concernant les valeurs des Çvennements (cf t_event).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="c_ev_clavier"></span><code><strong>c_ev_clavier</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="c_ev_souris"></span><code><strong>c_ev_souris</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="c_ev_commande"></span><code><strong>c_ev_commande</strong> = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="mode_insert"></span><code><strong>mode_insert</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

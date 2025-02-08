@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: u_cache_disk</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit u_cache_disk</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_cache_disk.html#fich_valide">fich_valide</a></strong>(f : integer) : boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="u_cache_disk.html#ouvre">ouvre</a></strong>(nom : string; read_write : <a href="u_cache_disk.html#t_read_write">t_read_write</a>) : integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_cache_disk.html#lit_bloc">lit_bloc</a></strong>(f : integer; var res; taille : word);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="u_cache_disk.html#ecrit_bloc">ecrit_bloc</a></strong>(f : integer; var res; taille : word);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_cache_disk.html#ferme">ferme</a></strong>(f : integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="u_cache_disk.html#fin_fich">fin_fich</a></strong>(f : integer) : boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_cache_disk.html#get_taille">get_taille</a></strong>(f : integer) : longint;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_cache_disk.html#t_read_write">t_read_write</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_cache_disk.html#nb_fic">nb_fic</a></strong> = 10;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_cache_disk.html#tampon_fic">tampon_fic</a></strong> = 512;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_cache_disk.html#erreur_io">erreur_io</a></strong> : word = 0;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fich_valide"></span><code>function <strong>fich_valide</strong>(f : integer) : boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ouvre"></span><code>function <strong>ouvre</strong>(nom : string; read_write : <a href="u_cache_disk.html#t_read_write">t_read_write</a>) : integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Indique si un num‚ro de fichier est utilisable.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="lit_bloc"></span><code>procedure <strong>lit_bloc</strong>(f : integer; var res; taille : word);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Ouvre un fichier, et retourne son num‚ro. Un 0 correspond … une erreur.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ecrit_bloc"></span><code>procedure <strong>ecrit_bloc</strong>(f : integer; var res; taille : word);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Transfert TAILLE octet vers RES … partir du fichier F.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ferme"></span><code>procedure <strong>ferme</strong>(f : integer);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Transfert TAILLE octets de RES vers le fichier.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fin_fich"></span><code>function <strong>fin_fich</strong>(f : integer) : boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Referme le fichier F.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_taille"></span><code>function <strong>get_taille</strong>(f : integer) : longint;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Indique la fin d'un fichier</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="t_read_write"></span><code><strong>t_read_write</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Codes d'erreur: 0 - aucune erreur. 1 - fichier non ouvert. (consulter IORESULT) 2 - fin de fichier atteinte. 3 - num‚ro de fichier in‚xistant. 4 - Tentative de lecture sur fichier en ‚criture. 5 - Tentative d'‚criture sur fichier en lecture. 6 - Erreur disque (consulter IORESULT).</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="lecture">lecture</span></li>
+<li>
+<span id="ecriture">ecriture</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="nb_fic"></span><code><strong>nb_fic</strong> = 10;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Auteur: Patrick Pr‚martin. Date: 06/08/1992. 14/08/1992. 10/01/1993. Langage: Turbo Pascal 6.0 But: Acc‚l‚ration des lectures/‚critures r‚alis‚es par BLOCKREAD et BLOCKWRITE dans les programmes … l'aide d'un cache disque.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="tampon_fic"></span><code><strong>tampon_fic</strong> = 512;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Nombre de fichiers g‚r‚s.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="erreur_io"></span><code><strong>erreur_io</strong> : word = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Taille en octets pour le tampon de chaque fichier.</p>
+</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

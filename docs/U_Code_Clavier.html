@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: U_Code_Clavier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit U_Code_Clavier</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section">Functions and Procedures</div><div class="one_section">Types</div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Carac_Nul">Carac_Nul</a></strong>  = #0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Carac_Bell">Carac_Bell</a></strong> = #7;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Carac_Ht">Carac_Ht</a></strong>   = #9;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Carac_Lf">Carac_Lf</a></strong>   = #10;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Carac_Vt">Carac_Vt</a></strong>   = #11;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Carac_Ff">Carac_Ff</a></strong>   = #12;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Carac_Cr">Carac_Cr</a></strong>   = #13;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Backspace">Touche_Backspace</a></strong>      = #8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Tab">Touche_Tab</a></strong>            = #9;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Return">Touche_Return</a></strong>         = #13;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Escape">Touche_Escape</a></strong>         = #27;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_A">Touche_Ctrl_A</a></strong>         = #1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_B">Touche_Ctrl_B</a></strong>         = #2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_C">Touche_Ctrl_C</a></strong>         = #3;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_D">Touche_Ctrl_D</a></strong>         = #4;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_E">Touche_Ctrl_E</a></strong>         = #5;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F">Touche_Ctrl_F</a></strong>         = #6;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_G">Touche_Ctrl_G</a></strong>         = #7;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_H">Touche_Ctrl_H</a></strong>         = #8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_I">Touche_Ctrl_I</a></strong>         = #9;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_J">Touche_Ctrl_J</a></strong>         = #10;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_K">Touche_Ctrl_K</a></strong>         = #11;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_L">Touche_Ctrl_L</a></strong>         = #12;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_M">Touche_Ctrl_M</a></strong>         = #13;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_N">Touche_Ctrl_N</a></strong>         = #14;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_O">Touche_Ctrl_O</a></strong>         = #15;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_P">Touche_Ctrl_P</a></strong>         = #16;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_Q">Touche_Ctrl_Q</a></strong>         = #17;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_R">Touche_Ctrl_R</a></strong>         = #18;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_S">Touche_Ctrl_S</a></strong>         = #19;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_T">Touche_Ctrl_T</a></strong>         = #20;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_U">Touche_Ctrl_U</a></strong>         = #21;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_V">Touche_Ctrl_V</a></strong>         = #22;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_W">Touche_Ctrl_W</a></strong>         = #23;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_X">Touche_Ctrl_X</a></strong>         = #24;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_Y">Touche_Ctrl_Y</a></strong>         = #25;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_Z">Touche_Ctrl_Z</a></strong>         = #26;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_Backspace">Touche_Ctrl_Backspace</a></strong> = #127;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_return">Touche_Ctrl_return</a></strong>    = #10;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_F1">Touche_F1</a></strong>        = #59;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_F2">Touche_F2</a></strong>        = #60;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_F3">Touche_F3</a></strong>        = #61;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_F4">Touche_F4</a></strong>        = #62;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_F5">Touche_F5</a></strong>        = #63;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_F6">Touche_F6</a></strong>        = #64;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_F7">Touche_F7</a></strong>        = #65;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_F8">Touche_F8</a></strong>        = #66;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_F9">Touche_F9</a></strong>        = #67;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_F10">Touche_F10</a></strong>       = #68;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_F11">Touche_F11</a></strong>       = #133;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_F12">Touche_F12</a></strong>       = #134;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_F1">Touche_Shift_F1</a></strong>  = #84;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_F2">Touche_Shift_F2</a></strong>  = #85;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_F3">Touche_Shift_F3</a></strong>  = #86;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_F4">Touche_Shift_F4</a></strong>  = #87;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_F5">Touche_Shift_F5</a></strong>  = #88;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_F6">Touche_Shift_F6</a></strong>  = #89;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_F7">Touche_Shift_F7</a></strong>  = #90;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_F8">Touche_Shift_F8</a></strong>  = #91;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_F9">Touche_Shift_F9</a></strong>  = #92;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_F10">Touche_Shift_F10</a></strong> = #93;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_F11">Touche_Shift_F11</a></strong> = #135;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_F12">Touche_Shift_F12</a></strong> = #136;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F1">Touche_Ctrl_F1</a></strong>   = #94;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F2">Touche_Ctrl_F2</a></strong>   = #95;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F3">Touche_Ctrl_F3</a></strong>   = #96;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F4">Touche_Ctrl_F4</a></strong>   = #97;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F5">Touche_Ctrl_F5</a></strong>   = #98;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F6">Touche_Ctrl_F6</a></strong>   = #99;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F7">Touche_Ctrl_F7</a></strong>   = #100;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F8">Touche_Ctrl_F8</a></strong>   = #101;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F9">Touche_Ctrl_F9</a></strong>   = #102;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F10">Touche_Ctrl_F10</a></strong>  = #103;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F11">Touche_Ctrl_F11</a></strong>  = #137;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_F12">Touche_Ctrl_F12</a></strong>  = #138;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F1">Touche_Alt_F1</a></strong>    = #104;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F2">Touche_Alt_F2</a></strong>    = #105;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F3">Touche_Alt_F3</a></strong>    = #106;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F4">Touche_Alt_F4</a></strong>    = #107;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F5">Touche_Alt_F5</a></strong>    = #108;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F6">Touche_Alt_F6</a></strong>    = #109;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F7">Touche_Alt_F7</a></strong>    = #110;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F8">Touche_Alt_F8</a></strong>    = #111;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F9">Touche_Alt_F9</a></strong>    = #112;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F10">Touche_Alt_F10</a></strong>   = #113;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F11">Touche_Alt_F11</a></strong>   = #139;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F12">Touche_Alt_F12</a></strong>   = #140;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Home">Touche_Home</a></strong>      = #71;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Haut">Touche_Haut</a></strong>      = #72;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Page_Up">Touche_Page_Up</a></strong>   = #73;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Gauche">Touche_Gauche</a></strong>    = #75;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Droite">Touche_Droite</a></strong>    = #77;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_End">Touche_End</a></strong>       = #79;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Bas">Touche_Bas</a></strong>       = #80;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Page_Dn">Touche_Page_Dn</a></strong>   = #81;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ins">Touche_Ins</a></strong>       = #82;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Del">Touche_Del</a></strong>       = #83;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Shift_Tab">Touche_Shift_Tab</a></strong>    = #15;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_Prtscr">Touche_Ctrl_Prtscr</a></strong>  = #114;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_Gauche">Touche_Ctrl_Gauche</a></strong>  = #115;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_Droite">Touche_Ctrl_Droite</a></strong>  = #116;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_Home">Touche_Ctrl_Home</a></strong>    = #119;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_End">Touche_Ctrl_End</a></strong>     = #117;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_Page_Up">Touche_Ctrl_Page_Up</a></strong> = #132;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_Page_Dn">Touche_Ctrl_Page_Dn</a></strong> = #118;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_Ins">Touche_Ctrl_Ins</a></strong>     = #4;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Ctrl_Del">Touche_Ctrl_Del</a></strong>     = #6;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_1">Touche_Alt_1</a></strong>        = #120;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_2">Touche_Alt_2</a></strong>        = #121;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_3">Touche_Alt_3</a></strong>        = #122;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_4">Touche_Alt_4</a></strong>        = #123;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_5">Touche_Alt_5</a></strong>        = #124;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_6">Touche_Alt_6</a></strong>        = #125;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_7">Touche_Alt_7</a></strong>        = #126;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_8">Touche_Alt_8</a></strong>        = #127;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_9">Touche_Alt_9</a></strong>        = #128;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_0">Touche_Alt_0</a></strong>        = #129;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_A">Touche_Alt_A</a></strong>        = #16;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_B">Touche_Alt_B</a></strong>        = #48;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_C">Touche_Alt_C</a></strong>        = #46;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_D">Touche_Alt_D</a></strong>        = #32;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_E">Touche_Alt_E</a></strong>        = #18;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_F">Touche_Alt_F</a></strong>        = #33;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_G">Touche_Alt_G</a></strong>        = #34;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_H">Touche_Alt_H</a></strong>        = #35;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_I">Touche_Alt_I</a></strong>        = #23;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_J">Touche_Alt_J</a></strong>        = #36;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_K">Touche_Alt_K</a></strong>        = #37;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_L">Touche_Alt_L</a></strong>        = #38;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_M">Touche_Alt_M</a></strong>        = #39;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_N">Touche_Alt_N</a></strong>        = #49;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_O">Touche_Alt_O</a></strong>        = #24;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_P">Touche_Alt_P</a></strong>        = #25;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_Q">Touche_Alt_Q</a></strong>        = #30;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_R">Touche_Alt_R</a></strong>        = #19;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_S">Touche_Alt_S</a></strong>        = #31;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_T">Touche_Alt_T</a></strong>        = #20;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_U">Touche_Alt_U</a></strong>        = #22;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_V">Touche_Alt_V</a></strong>        = #47;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_W">Touche_Alt_W</a></strong>        = #44;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_X">Touche_Alt_X</a></strong>        = #45;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_Y">Touche_Alt_Y</a></strong>        = #21;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Code_Clavier.html#Touche_Alt_Z">Touche_Alt_Z</a></strong>        = #17;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Carac_Nul"></span><code><strong>Carac_Nul</strong>  = #0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+CaractŠres sp‚ciaux:</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Carac_Bell"></span><code><strong>Carac_Bell</strong> = #7;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Carac_Ht"></span><code><strong>Carac_Ht</strong>   = #9;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Carac_Lf"></span><code><strong>Carac_Lf</strong>   = #10;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Carac_Vt"></span><code><strong>Carac_Vt</strong>   = #11;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Carac_Ff"></span><code><strong>Carac_Ff</strong>   = #12;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Carac_Cr"></span><code><strong>Carac_Cr</strong>   = #13;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Backspace"></span><code><strong>Touche_Backspace</strong>      = #8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Touches normales:</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Tab"></span><code><strong>Touche_Tab</strong>            = #9;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Return"></span><code><strong>Touche_Return</strong>         = #13;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Escape"></span><code><strong>Touche_Escape</strong>         = #27;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_A"></span><code><strong>Touche_Ctrl_A</strong>         = #1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_B"></span><code><strong>Touche_Ctrl_B</strong>         = #2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_C"></span><code><strong>Touche_Ctrl_C</strong>         = #3;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_D"></span><code><strong>Touche_Ctrl_D</strong>         = #4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_E"></span><code><strong>Touche_Ctrl_E</strong>         = #5;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F"></span><code><strong>Touche_Ctrl_F</strong>         = #6;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_G"></span><code><strong>Touche_Ctrl_G</strong>         = #7;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_H"></span><code><strong>Touche_Ctrl_H</strong>         = #8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_I"></span><code><strong>Touche_Ctrl_I</strong>         = #9;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_J"></span><code><strong>Touche_Ctrl_J</strong>         = #10;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_K"></span><code><strong>Touche_Ctrl_K</strong>         = #11;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_L"></span><code><strong>Touche_Ctrl_L</strong>         = #12;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_M"></span><code><strong>Touche_Ctrl_M</strong>         = #13;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_N"></span><code><strong>Touche_Ctrl_N</strong>         = #14;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_O"></span><code><strong>Touche_Ctrl_O</strong>         = #15;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_P"></span><code><strong>Touche_Ctrl_P</strong>         = #16;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_Q"></span><code><strong>Touche_Ctrl_Q</strong>         = #17;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_R"></span><code><strong>Touche_Ctrl_R</strong>         = #18;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_S"></span><code><strong>Touche_Ctrl_S</strong>         = #19;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_T"></span><code><strong>Touche_Ctrl_T</strong>         = #20;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_U"></span><code><strong>Touche_Ctrl_U</strong>         = #21;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_V"></span><code><strong>Touche_Ctrl_V</strong>         = #22;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_W"></span><code><strong>Touche_Ctrl_W</strong>         = #23;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_X"></span><code><strong>Touche_Ctrl_X</strong>         = #24;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_Y"></span><code><strong>Touche_Ctrl_Y</strong>         = #25;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_Z"></span><code><strong>Touche_Ctrl_Z</strong>         = #26;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_Backspace"></span><code><strong>Touche_Ctrl_Backspace</strong> = #127;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_return"></span><code><strong>Touche_Ctrl_return</strong>    = #10;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_F1"></span><code><strong>Touche_F1</strong>        = #59;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+F1 … F10 : appuit sur la touche correspondante.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_F2"></span><code><strong>Touche_F2</strong>        = #60;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_F3"></span><code><strong>Touche_F3</strong>        = #61;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_F4"></span><code><strong>Touche_F4</strong>        = #62;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_F5"></span><code><strong>Touche_F5</strong>        = #63;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_F6"></span><code><strong>Touche_F6</strong>        = #64;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_F7"></span><code><strong>Touche_F7</strong>        = #65;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_F8"></span><code><strong>Touche_F8</strong>        = #66;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_F9"></span><code><strong>Touche_F9</strong>        = #67;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_F10"></span><code><strong>Touche_F10</strong>       = #68;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_F11"></span><code><strong>Touche_F11</strong>       = #133;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_F12"></span><code><strong>Touche_F12</strong>       = #134;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_F1"></span><code><strong>Touche_Shift_F1</strong>  = #84;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+F11 … F20 : appuit sur Shift + F1 … F10.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_F2"></span><code><strong>Touche_Shift_F2</strong>  = #85;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_F3"></span><code><strong>Touche_Shift_F3</strong>  = #86;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_F4"></span><code><strong>Touche_Shift_F4</strong>  = #87;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_F5"></span><code><strong>Touche_Shift_F5</strong>  = #88;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_F6"></span><code><strong>Touche_Shift_F6</strong>  = #89;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_F7"></span><code><strong>Touche_Shift_F7</strong>  = #90;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_F8"></span><code><strong>Touche_Shift_F8</strong>  = #91;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_F9"></span><code><strong>Touche_Shift_F9</strong>  = #92;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_F10"></span><code><strong>Touche_Shift_F10</strong> = #93;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_F11"></span><code><strong>Touche_Shift_F11</strong> = #135;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_F12"></span><code><strong>Touche_Shift_F12</strong> = #136;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F1"></span><code><strong>Touche_Ctrl_F1</strong>   = #94;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+F21 … F30 : appuit sur Ctrl + F1 … F10.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F2"></span><code><strong>Touche_Ctrl_F2</strong>   = #95;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F3"></span><code><strong>Touche_Ctrl_F3</strong>   = #96;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F4"></span><code><strong>Touche_Ctrl_F4</strong>   = #97;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F5"></span><code><strong>Touche_Ctrl_F5</strong>   = #98;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F6"></span><code><strong>Touche_Ctrl_F6</strong>   = #99;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F7"></span><code><strong>Touche_Ctrl_F7</strong>   = #100;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F8"></span><code><strong>Touche_Ctrl_F8</strong>   = #101;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F9"></span><code><strong>Touche_Ctrl_F9</strong>   = #102;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F10"></span><code><strong>Touche_Ctrl_F10</strong>  = #103;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F11"></span><code><strong>Touche_Ctrl_F11</strong>  = #137;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_F12"></span><code><strong>Touche_Ctrl_F12</strong>  = #138;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F1"></span><code><strong>Touche_Alt_F1</strong>    = #104;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+F31 … F40 : appuit sur Alt + F1 … F10.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F2"></span><code><strong>Touche_Alt_F2</strong>    = #105;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F3"></span><code><strong>Touche_Alt_F3</strong>    = #106;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F4"></span><code><strong>Touche_Alt_F4</strong>    = #107;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F5"></span><code><strong>Touche_Alt_F5</strong>    = #108;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F6"></span><code><strong>Touche_Alt_F6</strong>    = #109;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F7"></span><code><strong>Touche_Alt_F7</strong>    = #110;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F8"></span><code><strong>Touche_Alt_F8</strong>    = #111;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F9"></span><code><strong>Touche_Alt_F9</strong>    = #112;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F10"></span><code><strong>Touche_Alt_F10</strong>   = #113;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F11"></span><code><strong>Touche_Alt_F11</strong>   = #139;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F12"></span><code><strong>Touche_Alt_F12</strong>   = #140;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Home"></span><code><strong>Touche_Home</strong>      = #71;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Touches de d‚placement du pav‚ num‚rique:</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Haut"></span><code><strong>Touche_Haut</strong>      = #72;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Page_Up"></span><code><strong>Touche_Page_Up</strong>   = #73;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Gauche"></span><code><strong>Touche_Gauche</strong>    = #75;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Droite"></span><code><strong>Touche_Droite</strong>    = #77;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_End"></span><code><strong>Touche_End</strong>       = #79;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Bas"></span><code><strong>Touche_Bas</strong>       = #80;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Page_Dn"></span><code><strong>Touche_Page_Dn</strong>   = #81;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ins"></span><code><strong>Touche_Ins</strong>       = #82;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Del"></span><code><strong>Touche_Del</strong>       = #83;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Shift_Tab"></span><code><strong>Touche_Shift_Tab</strong>    = #15;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Autres combinaisons de touches:</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_Prtscr"></span><code><strong>Touche_Ctrl_Prtscr</strong>  = #114;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_Gauche"></span><code><strong>Touche_Ctrl_Gauche</strong>  = #115;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_Droite"></span><code><strong>Touche_Ctrl_Droite</strong>  = #116;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_Home"></span><code><strong>Touche_Ctrl_Home</strong>    = #119;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_End"></span><code><strong>Touche_Ctrl_End</strong>     = #117;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_Page_Up"></span><code><strong>Touche_Ctrl_Page_Up</strong> = #132;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_Page_Dn"></span><code><strong>Touche_Ctrl_Page_Dn</strong> = #118;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_Ins"></span><code><strong>Touche_Ctrl_Ins</strong>     = #4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Ctrl_Del"></span><code><strong>Touche_Ctrl_Del</strong>     = #6;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_1"></span><code><strong>Touche_Alt_1</strong>        = #120;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_2"></span><code><strong>Touche_Alt_2</strong>        = #121;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_3"></span><code><strong>Touche_Alt_3</strong>        = #122;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_4"></span><code><strong>Touche_Alt_4</strong>        = #123;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_5"></span><code><strong>Touche_Alt_5</strong>        = #124;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_6"></span><code><strong>Touche_Alt_6</strong>        = #125;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_7"></span><code><strong>Touche_Alt_7</strong>        = #126;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_8"></span><code><strong>Touche_Alt_8</strong>        = #127;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_9"></span><code><strong>Touche_Alt_9</strong>        = #128;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_0"></span><code><strong>Touche_Alt_0</strong>        = #129;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_A"></span><code><strong>Touche_Alt_A</strong>        = #16;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_B"></span><code><strong>Touche_Alt_B</strong>        = #48;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_C"></span><code><strong>Touche_Alt_C</strong>        = #46;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_D"></span><code><strong>Touche_Alt_D</strong>        = #32;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_E"></span><code><strong>Touche_Alt_E</strong>        = #18;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_F"></span><code><strong>Touche_Alt_F</strong>        = #33;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_G"></span><code><strong>Touche_Alt_G</strong>        = #34;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_H"></span><code><strong>Touche_Alt_H</strong>        = #35;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_I"></span><code><strong>Touche_Alt_I</strong>        = #23;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_J"></span><code><strong>Touche_Alt_J</strong>        = #36;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_K"></span><code><strong>Touche_Alt_K</strong>        = #37;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_L"></span><code><strong>Touche_Alt_L</strong>        = #38;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_M"></span><code><strong>Touche_Alt_M</strong>        = #39;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_N"></span><code><strong>Touche_Alt_N</strong>        = #49;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_O"></span><code><strong>Touche_Alt_O</strong>        = #24;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_P"></span><code><strong>Touche_Alt_P</strong>        = #25;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_Q"></span><code><strong>Touche_Alt_Q</strong>        = #30;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_R"></span><code><strong>Touche_Alt_R</strong>        = #19;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_S"></span><code><strong>Touche_Alt_S</strong>        = #31;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_T"></span><code><strong>Touche_Alt_T</strong>        = #20;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_U"></span><code><strong>Touche_Alt_U</strong>        = #22;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_V"></span><code><strong>Touche_Alt_V</strong>        = #47;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_W"></span><code><strong>Touche_Alt_W</strong>        = #44;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_X"></span><code><strong>Touche_Alt_X</strong>        = #45;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_Y"></span><code><strong>Touche_Alt_Y</strong>        = #21;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Touche_Alt_Z"></span><code><strong>Touche_Alt_Z</strong>        = #17;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

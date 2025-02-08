@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: U_Chaine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit U_Chaine</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Chaine.html#Copie_Milieu">Copie_Milieu</a></strong>(Origine : String; Var Destination : String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Chaine.html#Lettre">Lettre</a></strong>(C : Char) : Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Chaine.html#Lettre_Espace">Lettre_Espace</a></strong>(C : Char) : Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Chaine.html#Alphabetique">Alphabetique</a></strong>(Ch : String) : Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Chaine.html#Numerique">Numerique</a></strong>(Ch : String) : Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Chaine.html#Complementer_Chaine">Complementer_Chaine</a></strong>(Var Ch : String; Longeur : Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Chaine.html#Trait">Trait</a></strong>(C : Char; Longeur : Integer) : String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Chaine.html#Justifier_gauche">Justifier_gauche</a></strong>(Ch : String) : String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Chaine.html#Justifier_Droite">Justifier_Droite</a></strong>(Ch : String) : String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Chaine.html#Cadrer_Gauche">Cadrer_Gauche</a></strong>(Ch : String) : String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Chaine.html#Cadrer_Droite">Cadrer_Droite</a></strong>(Ch : String) : String;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Chaine.html#Chaine10">Chaine10</a></strong> = String [10];</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Chaine.html#Chaine20">Chaine20</a></strong> = String [20];</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Chaine.html#Chaine40">Chaine40</a></strong> = String [40];</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Chaine.html#Chaine80">Chaine80</a></strong> = String [80];</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Chaine.html#Vecteur_Chaine_20_10">Vecteur_Chaine_20_10</a></strong>   = Array [1..10]   Of <a href="U_Chaine.html#Chaine20">Chaine20</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Chaine.html#Vecteur_Chaine_20_100">Vecteur_Chaine_20_100</a></strong>  = Array [1..100]  Of <a href="U_Chaine.html#Chaine20">Chaine20</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Chaine.html#Vecteur_Chaine_20_1000">Vecteur_Chaine_20_1000</a></strong> = Array [1..1000] Of <a href="U_Chaine.html#Chaine20">Chaine20</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Chaine.html#Vecteur_Chaine">Vecteur_Chaine</a></strong> = <a href="U_Chaine.html#Vecteur_Chaine_20_100">Vecteur_Chaine_20_100</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="U_Chaine.html#Chaine_Vide">Chaine_Vide</a></strong> = '';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="U_Chaine.html#Espace">Espace</a></strong>      = ' ';</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Copie_Milieu"></span><code>Procedure <strong>Copie_Milieu</strong>(Origine : String; Var Destination : String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+********************************************************************************</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Lettre"></span><code>Function <strong>Lettre</strong>(C : Char) : Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Recopie Origine dans Destination en cadrant la chaine, si la chaine de d‚part est trop longue, on se contente d'en copier le d‚but.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Lettre_Espace"></span><code>Function <strong>Lettre_Espace</strong>(C : Char) : Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Renvoie TRUE si le caractŠre pass‚ est bien une lettre (majuscule ou minuscule).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Alphabetique"></span><code>Function <strong>Alphabetique</strong>(Ch : String) : Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Renvoie TRUE si le caractŠre pass‚ est une lettre ou un espace.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Numerique"></span><code>Function <strong>Numerique</strong>(Ch : String) : Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Est TRUE si la chaine pass‚e est compos‚e uniquement d'espaces ou de lettres.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Complementer_Chaine"></span><code>Procedure <strong>Complementer_Chaine</strong>(Var Ch : String; Longeur : Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Est TRUE si la chaine pass‚e est compos‚e uniquement de chiffres.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Trait"></span><code>Function <strong>Trait</strong>(C : Char; Longeur : Integer) : String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Compl‚mente la chaine par des espaces.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Justifier_gauche"></span><code>Function <strong>Justifier_gauche</strong>(Ch : String) : String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Met Longueur caractŠres C dans la chaine r‚sultante.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Justifier_Droite"></span><code>Function <strong>Justifier_Droite</strong>(Ch : String) : String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Suppression des espaces au d‚but de la chaine.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Cadrer_Gauche"></span><code>Function <strong>Cadrer_Gauche</strong>(Ch : String) : String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Suppression des espaces … la fin de la chaine.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Cadrer_Droite"></span><code>Function <strong>Cadrer_Droite</strong>(Ch : String) : String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cadrage de la chaine … gauche.</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Chaine10"></span><code><strong>Chaine10</strong> = String [10];</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Chaine20"></span><code><strong>Chaine20</strong> = String [20];</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Chaine40"></span><code><strong>Chaine40</strong> = String [40];</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Chaine80"></span><code><strong>Chaine80</strong> = String [80];</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Vecteur_Chaine_20_10"></span><code><strong>Vecteur_Chaine_20_10</strong>   = Array [1..10]   Of <a href="U_Chaine.html#Chaine20">Chaine20</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Vecteur_Chaine_20_100"></span><code><strong>Vecteur_Chaine_20_100</strong>  = Array [1..100]  Of <a href="U_Chaine.html#Chaine20">Chaine20</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Vecteur_Chaine_20_1000"></span><code><strong>Vecteur_Chaine_20_1000</strong> = Array [1..1000] Of <a href="U_Chaine.html#Chaine20">Chaine20</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Vecteur_Chaine"></span><code><strong>Vecteur_Chaine</strong> = <a href="U_Chaine.html#Vecteur_Chaine_20_100">Vecteur_Chaine_20_100</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Chaine_Vide"></span><code><strong>Chaine_Vide</strong> = '';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Modifi‚e par Pr‚martin Patrick 19/09/1993, Borland Pascal 7.0</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Espace"></span><code><strong>Espace</strong>      = ' ';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

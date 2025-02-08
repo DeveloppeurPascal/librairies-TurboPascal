@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: olf_software</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit olf_software</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="olf_software.html#shareware_careware">shareware_careware</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="olf_software.html#init_licence">init_licence</a></strong>(ch : string);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="olf_software.html#init_olf_message">init_olf_message</a></strong>(numero : integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="olf_software.html#init_olf_software">init_olf_software</a></strong>(soft_name : string; copyright : string);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="olf_software.html#init_ligne_olf_software">init_ligne_olf_software</a></strong>(soft_name : string; copyright : string);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="olf_software.html#aff_olf_message">aff_olf_message</a></strong>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="olf_software.html#olf_soft_header_1">olf_soft_header_1</a></strong> = #8'Olf Software program: ';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="olf_software.html#olf_soft_header_2">olf_soft_header_2</a></strong> = #10#13#10'Never change this file, otherwise, the '
+                       + 'program will not run...'#10#13#26#0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="olf_software.html#nb_max_util">nb_max_util</a></strong> = 25;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="olf_software.html#mess_nothing">mess_nothing</a></strong> = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="olf_software.html#mess_freeware">mess_freeware</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="olf_software.html#mess_shareware">mess_shareware</a></strong> = 2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="olf_software.html#mess_careware">mess_careware</a></strong> = 3;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="olf_software.html#mess_demo">mess_demo</a></strong> = 4;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="olf_software.html#num_dist">num_dist</a></strong> : longint = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="olf_software.html#num_util">num_util</a></strong> : longint = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="olf_software.html#mess_num">mess_num</a></strong> : integer = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="olf_software.html#editeur">editeur</a></strong> : string = '';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="olf_software.html#utilisateur">utilisateur</a></strong> : string = '';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="olf_software.html#code_prog">code_prog</a></strong> : string [8] = '        ';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="olf_software.html#code_licence">code_licence</a></strong> : string [8] = '        ';</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="shareware_careware"></span><code>procedure <strong>shareware_careware</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="init_licence"></span><code>procedure <strong>init_licence</strong>(ch : string);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="init_olf_message"></span><code>procedure <strong>init_olf_message</strong>(numero : integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="init_olf_software"></span><code>procedure <strong>init_olf_software</strong>(soft_name : string; copyright : string);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="init_ligne_olf_software"></span><code>procedure <strong>init_ligne_olf_software</strong>(soft_name : string; copyright : string);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="aff_olf_message"></span><code>procedure <strong>aff_olf_message</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="olf_soft_header_1"></span><code><strong>olf_soft_header_1</strong> = #8'Olf Software program: ';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Auteur: Pr‚martin Patrick. Date: 15/08/1991. 19/08/1991. 22/08/1991. 23/08/1991. 25/08/1991. 26/08/1991. 27/08/1991. 09/09/1991. 13/11/1991. 27/12/1991. 26/04/1992. 27/07/1992. 28/07/1992. (Interface Multi-Langues) 30/07/1992. 05/08/1992. 22/11/1992. 13/12/1992. 30/12/1992. 01/01/1993. 02/01/1993. 22/03/1993. Langage: Turbo Pascal 6.0 23/03/1995. Langage: Borland Pascal 7.0 But: Pr‚sentation des logiciels sous le label Olf_Software.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="olf_soft_header_2"></span><code><strong>olf_soft_header_2</strong> = #10#13#10'Never change this file, otherwise, the '
+                       + 'program will not run...'#10#13#26#0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Ins‚rer le code du programme.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="nb_max_util"></span><code><strong>nb_max_util</strong> = 25;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="mess_nothing"></span><code><strong>mess_nothing</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Nombre maximal d'utilisations d'un programme non enregistr‚.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="mess_freeware"></span><code><strong>mess_freeware</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="mess_shareware"></span><code><strong>mess_shareware</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="mess_careware"></span><code><strong>mess_careware</strong> = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="mess_demo"></span><code><strong>mess_demo</strong> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="num_dist"></span><code><strong>num_dist</strong> : longint = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="num_util"></span><code><strong>num_util</strong> : longint = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="mess_num"></span><code><strong>mess_num</strong> : integer = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="editeur"></span><code><strong>editeur</strong> : string = '';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="utilisateur"></span><code><strong>utilisateur</strong> : string = '';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="code_prog"></span><code><strong>code_prog</strong> : string [8] = '        ';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="code_licence"></span><code><strong>code_licence</strong> : string [8] = '        ';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: u_msg</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit u_msg</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="u_msg.html#init_msg">init_msg</a></strong>(name : string);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="u_msg.html#get_msg">get_msg</a></strong>(num : word) : string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="u_msg.html#set_langue">set_langue</a></strong>(num : longint) : boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="u_msg.html#get_nb_msg">get_nb_msg</a></strong>: word;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_msg.html#header_msg">header_msg</a></strong> = #8'Olf Software Multi-Language Interface.'#10#13#26#0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_msg.html#msg_f">msg_f</a></strong> = 1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_msg.html#msg_gb">msg_gb</a></strong> = 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_msg.html#msg_d">msg_d</a></strong> = 4;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_msg.html#msg_i">msg_i</a></strong> = 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_msg.html#nom_fich_msg">nom_fich_msg</a></strong> : string = '';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_msg.html#langue_autorisee">langue_autorisee</a></strong> : longint = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="u_msg.html#langue_utilisee">langue_utilisee</a></strong> : longint = <a href="u_msg.html#msg_f">msg_f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="u_msg.html#langue_par_defaut">langue_par_defaut</a></strong> : longint = <a href="u_msg.html#msg_f">msg_f</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="init_msg"></span><code>procedure <strong>init_msg</strong>(name : string);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_msg"></span><code>function <strong>get_msg</strong>(num : word) : string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Chargement du fichier des messages, et s‚lection de la langue en cours.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="set_langue"></span><code>function <strong>set_langue</strong>(num : longint) : boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Renvoie la chaŒne contenant le message NUM.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_nb_msg"></span><code>function <strong>get_nb_msg</strong>: word;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Chargement de la langue par le programme, retourne TRUE si fichier de messages contient cette langue.</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="header_msg"></span><code><strong>header_msg</strong> = #8'Olf Software Multi-Language Interface.'#10#13#26#0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Auteur: Patrick Pr‚martin. Date: 21/07/1992. 24/07/1992. 27/07/1992. 28/07/1992. 29/07/1992. 30/07/1992. 05/08/1992. 03/07/1993. Langage: Turbo Pascal 6.0 19/09/1993, Borland Pascal 7.0 But: Gestion des fichiers d'extension MSG contenant les textes multi-lingues pour les nouveaux logiciels Olf Software.
+
+<p>La langue par d‚faut est le Fran‡ais.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="msg_f"></span><code><strong>msg_f</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="msg_gb"></span><code><strong>msg_gb</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Messages en Fran‡ais.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="msg_d"></span><code><strong>msg_d</strong> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Messages en Anglais.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="msg_i"></span><code><strong>msg_i</strong> = 8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Messages en Allemand.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="nom_fich_msg"></span><code><strong>nom_fich_msg</strong> : string = '';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Messages en Italien.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="langue_autorisee"></span><code><strong>langue_autorisee</strong> : longint = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="langue_utilisee"></span><code><strong>langue_utilisee</strong> : longint = <a href="u_msg.html#msg_f">msg_f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="langue_par_defaut"></span><code><strong>langue_par_defaut</strong> : longint = <a href="u_msg.html#msg_f">msg_f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

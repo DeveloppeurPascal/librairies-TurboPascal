@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My libraries for Turbo Pascal: U_Aff_Chaine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">My libraries for Turbo Pascal</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit U_Aff_Chaine</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Aff_Chaine.html#Nombre_Colonnes">Nombre_Colonnes</a></strong>: word;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Aff_Chaine.html#Len">Len</a></strong>(Chaine : String): Byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="U_Aff_Chaine.html#Non_Pos_Left">Non_Pos_Left</a></strong>(Carac : Char; Chaine : String): Byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <strong><a href="U_Aff_Chaine.html#Non_Pos_Right">Non_Pos_Right</a></strong>(Carac : Char; Chaine : String): Byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Debut_Fin">Affic_Debut_Fin</a></strong>(Chaine : String; Debut, Fin : Byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Space">Affic_Space</a></strong>(Nombre : Byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic">Affic</a></strong>(Chaine : String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Ln">Affic_Ln</a></strong>(Chaine : String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Xy">Affic_Xy</a></strong>(Chaine : String; X, Y : Byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Xy_Ln">Affic_Xy_Ln</a></strong>(Chaine : String; X, Y : Byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Center">Affic_Center</a></strong>(Chaine : String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Center_Ln">Affic_Center_Ln</a></strong>(Chaine : String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Center_Y">Affic_Center_Y</a></strong>(Chaine : String; Y : Byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Center_Y_Ln">Affic_Center_Y_Ln</a></strong>(Chaine : String; Y: Byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Left">Affic_Left</a></strong>(Chaine : String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Left_Ln">Affic_Left_Ln</a></strong>(Chaine : String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Left_Y">Affic_Left_Y</a></strong>(Chaine : String; Y : Byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Left_Y_Ln">Affic_Left_Y_Ln</a></strong>(Chaine : String; Y : Byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Right">Affic_Right</a></strong>(Chaine : String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Right_Ln">Affic_Right_Ln</a></strong>(Chaine : String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Right_Y">Affic_Right_Y</a></strong>(Chaine : String; Y : Byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <strong><a href="U_Aff_Chaine.html#Affic_Right_Y_Ln">Affic_Right_Y_Ln</a></strong>(Chaine : String; Y : Byte);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Nombre_Colonnes"></span><code>Function <strong>Nombre_Colonnes</strong>: word;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Partie des functions utiles … l'affichage.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Len"></span><code>Function <strong>Len</strong>(Chaine : String): Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+renvoie le nombre de colonnes de la fenetre courante.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Non_Pos_Left"></span><code>Function <strong>Non_Pos_Left</strong>(Carac : Char; Chaine : String): Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+renvoie la longueur de la chaine</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Non_Pos_Right"></span><code>Function <strong>Non_Pos_Right</strong>(Carac : Char; Chaine : String): Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cherche la position du premier caractŠre diff‚rent de carac … partir de la gauche de la chaine.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Debut_Fin"></span><code>Procedure <strong>Affic_Debut_Fin</strong>(Chaine : String; Debut, Fin : Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Partie des procedures d'affichage.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Space"></span><code>Procedure <strong>Affic_Space</strong>(Nombre : Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+affiche la chaine … partir de DEBUT jusqu'… FIN</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic"></span><code>Procedure <strong>Affic</strong>(Chaine : String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+affiche nombre espaces … partir de la position courante</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Ln"></span><code>Procedure <strong>Affic_Ln</strong>(Chaine : String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+affiche la chaine normalement</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Xy"></span><code>Procedure <strong>Affic_Xy</strong>(Chaine : String; X, Y : Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+affiche chaine puis change de ligne</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Xy_Ln"></span><code>Procedure <strong>Affic_Xy_Ln</strong>(Chaine : String; X, Y : Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+affiche chaine en (X,Y)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Center"></span><code>Procedure <strong>Affic_Center</strong>(Chaine : String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+affiche chaine en (X,Y) puis change de ligne</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Center_Ln"></span><code>Procedure <strong>Affic_Center_Ln</strong>(Chaine : String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+centre la chaine sur la ligne courante et l'affiche</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Center_Y"></span><code>Procedure <strong>Affic_Center_Y</strong>(Chaine : String; Y : Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+centre la chaine, l'affiche, puis change de ligne</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Center_Y_Ln"></span><code>Procedure <strong>Affic_Center_Y_Ln</strong>(Chaine : String; Y: Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+centre la chaine en ligne Y puis l'affiche</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Left"></span><code>Procedure <strong>Affic_Left</strong>(Chaine : String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+centre la chaine en ligne Y, l'affiche, change de ligne</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Left_Ln"></span><code>Procedure <strong>Affic_Left_Ln</strong>(Chaine : String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cadrage de la chaine … gauche</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Left_Y"></span><code>Procedure <strong>Affic_Left_Y</strong>(Chaine : String; Y : Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cadrage de la chaine … gauche, puis ligne suivante</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Left_Y_Ln"></span><code>Procedure <strong>Affic_Left_Y_Ln</strong>(Chaine : String; Y : Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cadrage … gauche, en ligne Y</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Right"></span><code>Procedure <strong>Affic_Right</strong>(Chaine : String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cadrage … gauche, en ligne Y, ligne suivante</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Right_Ln"></span><code>Procedure <strong>Affic_Right_Ln</strong>(Chaine : String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cadrage … droite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Right_Y"></span><code>Procedure <strong>Affic_Right_Y</strong>(Chaine : String; Y : Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cadrage … droite, ligne suivante</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Affic_Right_Y_Ln"></span><code>Procedure <strong>Affic_Right_Y_Ln</strong>(Chaine : String; Y : Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cadrage … droite en ligne Y</p>
+</td></tr>
+</table>
+<a href="https://pascallib.developpeur-pascal.fr/" target="_blank">My libraries for Turbo Pascal</a> (c) 1990-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>
